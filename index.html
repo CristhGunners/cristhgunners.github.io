@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="CristhGunners">
+<head>
+    <meta charset="UTF-8">
+    <title>CristhGunners - Cristhofer Andana Alcaino</title>
+    <link rel="stylesheet" href="css/icomoon/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body ng-controller="TodoCtrl">
+    <section class="content">
+        <div class="profile">
+            <div class="detail">
+                <figure>
+                    <img src="{{github.avatar_url}}" alt="">
+                </figure>
+                <h1> {{github.name}} <span>Desarrollador De Software</span></h1>
+                <a href="{{github.blog}}" target="_blank" class="twitter">
+                    <span class="icon-twitter"></span>
+                </a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li class="twitter">
+                        <span class="number">{{github.public_gists}} Gists</span>
+                        <a href="{{github.html_url}}"><span class="icon-github"></span></a>
+                    </li>
+                    <li class="github">
+                        <span class="number">{{github.public_repos}} Repositorios</span>
+                        <a href="{{github.html_url}}" target="_blank"><span class="icon-github"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="last-tweets" twitter-timeline="587681548947816449" auto-resize="true" css-url="css/vendor/twitter-timeline.css" data-tweet-limit="20">Cargando Tweets...</div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/vendor/twitter-timeline.js"></script>
+    <script src="js/vendor/flowtype.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
