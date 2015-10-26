@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.woff") format("woff"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social-facebook:before {
+  content: "a";
+}
+.icon-social-behance:before {
+  content: "b";
+}
+.icon-social-linkedin:before {
+  content: "c";
+}
+.icon-social-medium:before {
+  content: "d";
+}
+.icon-social-github:before {
+  content: "e";
+}
+.icon-social-blogger:before {
+  content: "f";
+}
+.icon-social-google-plus:before {
+  content: "g";
+}
+.icon-social-twitter:before {
+  content: "h";
+}
+.icon-social-tumblr:before {
+  content: "i";
+}
+.icon-social-steam:before {
+  content: "j";
+}
+.icon-social-stack-overflow:before {
+  content: "k";
+}
+.icon-social-youtube:before {
+  content: "l";
+}
+.icon-social-vimeo:before {
+  content: "m";
+}
+.icon-social-skype:before {
+  content: "n";
+}
+.icon-social-snapchat:before {
+  content: "o";
+}
+.icon-social-dribbble:before {
+  content: "p";
+}
+.icon-social-flickr:before {
+  content: "q";
+}
+.icon-social-instagram:before {
+  content: "r";
+}
+.icon-social-designer-news:before {
+  content: "s";
+}
+.icon-social-picasa:before {
+  content: "t";
+}
+.icon-social-pinterest:before {
+  content: "u";
+}
+.icon-mail:before {
+  content: "v";
+}
+.icon-marker:before {
+  content: "w";
+}
+.icon-social-orkut:before {
+  content: "x";
+}
+.icon-social-path:before {
+  content: "y";
+}
+.icon-social-reddit:before {
+  content: "z";
+}
+.icon-social-hacker-news:before {
+  content: "A";
+}
+.icon-social-dropbox:before {
+  content: "B";
+}
+.icon-social-drive:before {
+  content: "C";
+}
+.icon-social-digg:before {
+  content: "D";
+}
+.icon-social-myspace:before {
+  content: "E";
+}
+.icon-social-spotify:before {
+  content: "F";
+}
+.icon-social-treehouse:before {
+  content: "G";
+}
+.icon-telephone:before {
+  content: "H";
+}
+.icon-paypal:before {
+  content: "I";
+}
+.icon-play:before {
+  content: "J";
+}
+.icon-clock:before {
+  content: "K";
+}
+.icon-calendar:before {
+  content: "L";
+}
+.icon-share:before {
+  content: "M";
+}
+.icon-magnifying-glass:before {
+  content: "N";
+}
+.icon-comment:before {
+  content: "O";
+}
+.icon-photo:before {
+  content: "P";
+}
+.icon-up-bold:before {
+  content: "Q";
+}

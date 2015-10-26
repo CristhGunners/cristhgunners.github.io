@@ -1,5 +1,4 @@
-css/icomoon/demo-files/
-css/icomoon/Read Me.txt
-css/icomoon/selection.json
-css/icomoon.zip
-img
+node_modules
+source
+gulpfile.js
+package.json
