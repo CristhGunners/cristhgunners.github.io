@@ -29,6 +29,14 @@ const Content = (props: IContentProps) => (
         .content :global(h3) {
           @apply text-xl font-semibold text-gray-700 my-4;
         }
+
+        .content :global(a) {
+          @apply text-pink-600;
+        }
+
+        .content :global(a):hover {
+          @apply underline;
+        }
       `}
     </style>
   </div>
