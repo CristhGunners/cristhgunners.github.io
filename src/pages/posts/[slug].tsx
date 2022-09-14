@@ -21,6 +21,7 @@ type IPostProps = {
   modified_date: string;
   image: string;
   content: string;
+  subtitle: string;
 };
 
 const DisplayPost = (props: IPostProps) => (
@@ -37,10 +38,16 @@ const DisplayPost = (props: IPostProps) => (
       />
     }
   >
-    <h1 className="text-center font-bold text-3xl text-gray-900">
-      {props.title}
-    </h1>
-    <div className="text-center text-sm mb-8 capitalize">
+    <div className="relative mb-8">
+      <h1 className="text-center font-black text-3xl text-black relative z-20">
+        {props.title}
+      </h1>
+      <h2 className="absolute -top-6 left-0 right-0 text-center mx-auto text-6xl font-black uppercase text-black opacity-5 z-10">
+        {props.subtitle}
+      </h2>
+    </div>
+
+    <div className="text-center mb-8 uppercase font-bold text-black opacity-50 text-xs">
       {format(new Date(props.date), 'LLLL dd, yyyy', {
         locale: esLocale,
       })}
@@ -79,6 +86,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
     'image',
     'content',
     'slug',
+    'subtitle',
   ]);
   const content = await markdownToHtml(post.content || '');
 
@@ -90,6 +98,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
       modified_date: post.modified_date,
       image: post.image,
       content,
+      subtitle: post.subtitle,
     },
   };
 };

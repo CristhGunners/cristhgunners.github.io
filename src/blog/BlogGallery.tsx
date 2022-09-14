@@ -16,17 +16,18 @@ const BlogGallery = (props: IBlogGalleryProps) => (
   <>
     <ul>
       {props.posts.map((elt) => (
-        <li
-          key={elt.slug}
-          className="mb-6 flex flex-col items-start sm:flex-row justify-between sm:items-center"
-        >
+        <li key={elt.slug} className="mb-12 flex flex-col items-start relative">
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-            <a className="hover:text-black mb-2 sm:mb-0">
+            <a className="text-black font-black z-20 hover:text-pink-600">
               <h2>{elt.title}</h2>
             </a>
           </Link>
 
-          <div className="w-auto text-right uppercase font-bold bg-pink-600 p-2 text-white rounded text-xs">
+          <h3 className="absolute -top-8 left-0 text-6xl font-black uppercase text-black opacity-5 z-10">
+            {elt.subtitle}
+          </h3>
+
+          <div className="text-right uppercase font-bold mt-4 text-black opacity-50 text-xs z-20">
             {format(new Date(elt.date), 'LLLL dd, yyyy', {
               locale: esLocale,
             })}

@@ -4,6 +4,7 @@ description: 'Renombrar el ultimo commit.'
 date: '2022/09/11'
 modified_date: '2022/09/11'
 image: /assets/images/posts/git.png
+subtitle: 'git'
 ---
 
 Debes en cuando necesitamos renombrar el ultimo commit que creamos ya sea por algún error ortográfico o cualquier otro motivo.

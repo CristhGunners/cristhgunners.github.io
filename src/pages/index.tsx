@@ -18,7 +18,7 @@ const Index = (props: IBlogGalleryProps) => (
 );
 
 export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
-  const posts = getAllPosts(['title', 'date', 'slug']);
+  const posts = getAllPosts(['title', 'date', 'slug', 'subtitle']);
   const pagination: IPaginationProps = {};
 
   if (posts.length > AppConfig.pagination_size) {
