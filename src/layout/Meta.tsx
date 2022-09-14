@@ -20,6 +20,10 @@ type IMetaProps = {
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
 
+  const imageUrl = props.post
+    ? `${AppConfig.url}${router.basePath}${props.post.image}`
+    : `${AppConfig.url}${router.basePath}/assets/images/share.png`;
+
   return (
     <>
       <Head>
@@ -83,14 +87,10 @@ const Meta = (props: IMetaProps) => {
           content={AppConfig.site_name}
           key="og:site_name"
         />
+        <meta property="og:image" content={`${imageUrl}`} key="og:image" />
         {props.post && (
           <>
             <meta property="og:type" content="article" key="og:type" />
-            <meta
-              property="og:image"
-              content={`${AppConfig.url}${router.basePath}${props.post.image}`}
-              key="og:image"
-            />
             <meta
               name="twitter:card"
               content="summary_large_image"
@@ -134,7 +134,7 @@ const Meta = (props: IMetaProps) => {
               "name": "${AppConfig.author}"
             },
             "headline": "${props.title} | ${AppConfig.site_name}",
-            "image": ["${AppConfig.url}${router.basePath}${props.post.image}"],
+            "image": ["${imageUrl}"],
             "datePublished": "${new Date(props.post.date).toISOString()}",
             "dateModified": "${new Date(
               props.post.modified_date
