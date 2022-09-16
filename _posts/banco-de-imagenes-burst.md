@@ -7,4 +7,4 @@ image: /assets/images/posts/stock-photo.png
 subtitle: 'photos'
 ---
 
-Banco de imágenes gratuitos : [Burst](https://burst.shopify.com/).
+Banco de imágenes gratuitas : [Burst](https://burst.shopify.com/).
