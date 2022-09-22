@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
+import { Logo } from '../logo/Logo';
 import { AppConfig } from '../utils/AppConfig';
 
 type IMainProps = {
@@ -11,7 +11,7 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => {
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <div className="w-full px-4 text-gray-700 antialiased">
@@ -19,21 +19,7 @@ const Main = (props: IMainProps) => {
 
       <div className="relative z-30 mx-auto max-w-screen-md">
         <div className="flex flex-col justify-center items-center pt-16 pb-8">
-          <Link href={'/'} passHref>
-            <figure className="h-32 w-32 rounded-full overflow-hidden group">
-              <img
-                src={`${router.basePath}/assets/images/profile.jpeg`}
-                alt="CristhGunners"
-                className="mx-auto mb-4 block scale-100 cursor-pointer grayscale transition-transform group-hover:scale-105"
-              />
-            </figure>
-          </Link>
-          <Link href={'/'} passHref>
-            <h1 className="text-center text-4xl font-extrabold tracking-tight text-black cursor-pointer hover:underline">
-              {AppConfig.title}
-            </h1>
-          </Link>
-          <h2 className="text-center text-xl">{AppConfig.description}</h2>
+          <Logo />
         </div>
 
         <div className="py-8 text-xl">{props.children}</div>
