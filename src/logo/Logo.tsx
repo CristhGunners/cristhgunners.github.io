@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { AppConfig } from '../utils/AppConfig';
 
 const Logo = () => {
-  const title = `${AppConfig.title} - ${AppConfig.description} -`;
+  const title = `${AppConfig.title} - Desarrollador - de - Software -`;
 
   useEffect(() => {
     const text = document.querySelector('#text h1');
@@ -16,7 +16,7 @@ const Logo = () => {
         .map(
           (char, i) =>
             `<span style="transform:rotate(${
-              i * 8.2
+              i * 7.5
             }deg);position: absolute;left: 50%;font-size: 0.75em;transform-origin: 0 100px;">${char}</span>`
         )
         .join('');
