@@ -4,7 +4,7 @@ description: 'Como ordenar un array de números en Javascript.'
 date: '2022/09/14'
 modified_date: '2022/09/14'
 image: /assets/images/posts/js.png
-subtitle: 'javascript'
+subtitle: 'js'
 ---
 
 Como ordenar un array de números en Javascript :
