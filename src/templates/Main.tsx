@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react';
 import Link from 'next/link';
 
 import { Logo } from '../logo/Logo';
+import { Navbar } from '../navigation/Navbar';
 import { AppConfig } from '../utils/AppConfig';
 
 type IMainProps = {
@@ -18,6 +19,31 @@ const Main = (props: IMainProps) => {
       <div className="relative z-30 mx-auto max-w-screen-md">
         <div className="flex flex-col justify-center items-center pt-16 pb-8">
           <Logo />
+          <div className="mt-16">
+            <Navbar>
+              <li className="mr-6">
+                <Link href="/">
+                  <a className="font-bold text-black text-md hover:text-pink-600">
+                    Inicio
+                  </a>
+                </Link>
+              </li>
+              <li className="mr-6">
+                <Link href="/about/">
+                  <a className="font-bold text-black text-md hover:text-pink-600">
+                    Acerca
+                  </a>
+                </Link>
+              </li>
+              <li className="mr-6">
+                <Link href="/tags/">
+                  <a className="font-bold text-black text-md hover:text-pink-600">
+                    Tags
+                  </a>
+                </Link>
+              </li>
+            </Navbar>
+          </div>
         </div>
 
         <div className="py-8 text-xl">{props.children}</div>

@@ -5,6 +5,7 @@ date: '2022/09/14'
 modified_date: '2022/09/14'
 image: /assets/images/posts/js.png
 subtitle: 'js'
+tags: 'javascript'
 ---
 
 Como ordenar un array de números en Javascript :

@@ -5,6 +5,7 @@ date: '2022/09/15'
 modified_date: '2022/09/15'
 image: /assets/images/posts/html.png
 subtitle: 'html'
+tags: 'html'
 ---
 
 Como crear un simple acordeón solo con HTML.

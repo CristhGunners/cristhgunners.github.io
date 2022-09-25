@@ -9,6 +9,11 @@ export type PostItems = {
   [key: string]: string;
 };
 
+export type TagItem = {
+  tag: string;
+  count: number;
+};
+
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
@@ -44,4 +49,56 @@ export function getAllPosts(fields: string[] = []) {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
+}
+
+export function getAllTags(): TagItem[] {
+  const posts = getAllPosts(['tags']);
+
+  const allTags = posts.reduce<any>((group, post) => {
+    const { tags } = post;
+
+    if (group.some((tag: TagItem) => tag.tag === tags)) {
+      const tagFind = group.find((tag: TagItem) => tag.tag === tags);
+
+      if (tagFind) {
+        const index = group.indexOf(tagFind);
+
+        // eslint-disable-next-line no-param-reassign
+        group[index].count += group[index].count;
+      }
+    } else {
+      group.push({
+        tag: tags,
+        count: 1,
+      });
+    }
+
+    return group;
+  }, []);
+
+  return allTags;
+}
+
+export function getTagBySlug(slug: string) {
+  const tags = getAllTags();
+
+  const currentTag = tags.find((tag) => {
+    return tag.tag === slug;
+  });
+
+  return currentTag;
+}
+
+export function getPostsByTag(tag: string, fields: string[] = []) {
+  const slugs = getPostSlugs();
+  const posts = slugs
+    .map((slug) => getPostBySlug(slug, fields))
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+
+  const filteredPosts = posts.filter((post) => {
+    return post.tags === tag;
+  });
+
+  return filteredPosts;
 }
