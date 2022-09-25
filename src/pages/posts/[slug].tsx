@@ -22,6 +22,7 @@ type IPostProps = {
   image: string;
   content: string;
   subtitle: string;
+  tags: string;
 };
 
 const DisplayPost = (props: IPostProps) => (
@@ -87,6 +88,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
     'content',
     'slug',
     'subtitle',
+    'tags',
   ]);
   const content = await markdownToHtml(post.content || '');
 
@@ -99,6 +101,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
       image: post.image,
       content,
       subtitle: post.subtitle,
+      tags: post.tags,
     },
   };
 };

@@ -5,6 +5,7 @@ date: '2022/09/20'
 modified_date: '2022/09/20'
 image: /assets/images/posts/ts.png
 subtitle: 'ts'
+tags: 'typescript'
 ---
 
 ```ts

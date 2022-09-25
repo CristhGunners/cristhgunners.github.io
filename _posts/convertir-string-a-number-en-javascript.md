@@ -5,6 +5,7 @@ date: '2022/09/19'
 modified_date: '2022/09/19'
 image: /assets/images/posts/js.png
 subtitle: 'js'
+tags: 'javascript'
 ---
 
 ```js

@@ -5,6 +5,7 @@ date: '2022/09/12'
 modified_date: '2022/09/12'
 image: /assets/images/posts/html.png
 subtitle: 'html'
+tags: 'html'
 ---
 
 Como refrescar una pagina cada cierto tiempo, en este caso cada 15 segundos :
