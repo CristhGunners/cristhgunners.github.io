@@ -57,6 +57,14 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
+        <link rel="manifest" href={`${router.basePath}/site.webmanifest`} />
+        <link
+          rel="mask-icon"
+          href={`${router.basePath}/safari-pinned-tab.svg`}
+          color="#d53f8c"
+        />
+        <meta name="msapplication-TileColor" content="#d53f8c" />
+        <meta name="theme-color" content="#d53f8c" />
         <title>{`${props.title} - ${AppConfig.site_name}`}</title>
         <meta
           name="description"

@@ -21,21 +21,21 @@ const Main = (props: IMainProps) => {
           <Logo />
           <div className="mt-16">
             <Navbar>
-              <li className="mr-6">
+              <li>
                 <Link href="/">
                   <a className="font-bold text-black text-md hover:text-pink-600">
                     Inicio
                   </a>
                 </Link>
               </li>
-              <li className="mr-6">
+              <li>
                 <Link href="/about/">
                   <a className="font-bold text-black text-md hover:text-pink-600">
                     Acerca
                   </a>
                 </Link>
               </li>
-              <li className="mr-6">
+              <li>
                 <Link href="/tags/">
                   <a className="font-bold text-black text-md hover:text-pink-600">
                     Tags
@@ -50,7 +50,12 @@ const Main = (props: IMainProps) => {
 
         <footer className="py-8">
           <nav className="flex items-center justify-center space-x-6">
-            <a href={AppConfig.github_url} target="_blank" rel="noreferrer">
+            <a
+              href={AppConfig.github_url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Github"
+            >
               <svg
                 width="32px"
                 height="32px"
@@ -62,7 +67,12 @@ const Main = (props: IMainProps) => {
                 <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
               </svg>
             </a>
-            <a href={AppConfig.dribbble_url} target="_blank" rel="noreferrer">
+            <a
+              href={AppConfig.dribbble_url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Dribbble"
+            >
               <svg
                 width="24px"
                 height="24px"
@@ -76,7 +86,12 @@ const Main = (props: IMainProps) => {
                 <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
               </svg>
             </a>
-            <a href={AppConfig.behance_url} target="_blank" rel="noreferrer">
+            <a
+              href={AppConfig.behance_url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Behance"
+            >
               <svg
                 version="1.1"
                 id="Layer_1"
