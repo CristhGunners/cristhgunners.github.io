@@ -2,11 +2,9 @@ import React from 'react';
 
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-import { BlogGallery } from '../../blog/BlogGallery';
+import { BlogGalleryTag } from '../../blog/BlogGalleryTag';
 import { Meta } from '../../layout/Meta';
-import { IPaginationProps } from '../../pagination/Pagination';
 import { Main } from '../../templates/Main';
-import { AppConfig } from '../../utils/AppConfig';
 import {
   getAllTags,
   getPostsByTag,
@@ -22,7 +20,6 @@ type ITagProps = {
   tag: string;
   count: number;
   posts: PostItems[];
-  pagination: IPaginationProps;
 };
 
 const DisplayTag = (props: ITagProps) => {
@@ -39,7 +36,7 @@ const DisplayTag = (props: ITagProps) => {
         </h2>
       </div>
 
-      <BlogGallery posts={props.posts} pagination={props.pagination} />
+      <BlogGalleryTag posts={props.posts} />
     </Main>
   );
 };
@@ -75,18 +72,12 @@ export const getStaticProps: GetStaticProps<ITagProps, ITagUrl> = async ({
     'subtitle',
     'tags',
   ]);
-  const pagination: IPaginationProps = {};
-
-  if (posts.length > AppConfig.pagination_size) {
-    pagination.next = `/tags/${tag.tag}/page2`;
-  }
 
   return {
     props: {
       tag: tag.tag,
       count: tag.count,
-      posts: posts.slice(0, AppConfig.pagination_size),
-      pagination,
+      posts,
     },
   };
 };

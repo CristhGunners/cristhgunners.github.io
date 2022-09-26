@@ -64,7 +64,7 @@ export function getAllTags(): TagItem[] {
         const index = group.indexOf(tagFind);
 
         // eslint-disable-next-line no-param-reassign
-        group[index].count += group[index].count;
+        group[index].count += 1;
       }
     } else {
       group.push({
@@ -91,6 +91,7 @@ export function getTagBySlug(slug: string) {
 
 export function getPostsByTag(tag: string, fields: string[] = []) {
   const slugs = getPostSlugs();
+
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
