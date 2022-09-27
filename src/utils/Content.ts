@@ -76,7 +76,11 @@ export function getAllTags(): TagItem[] {
     return group;
   }, []);
 
-  return allTags;
+  const sortedAllTags = allTags.sort(
+    (a: TagItem, b: TagItem) => b.count - a.count
+  );
+
+  return sortedAllTags;
 }
 
 export function getTagBySlug(slug: string) {
