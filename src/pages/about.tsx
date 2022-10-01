@@ -7,17 +7,13 @@ import { Main } from '../templates/Main';
 const About = () => (
   <Main meta={<Meta title="Acerca de Mi" description="Acerca de Mi" />}>
     <Content>
-      <p className="mx-auto my-6 max-w-sm text-center">
-        Hola me llamo Cristhofer Andana y soy un Desarrollador de Software{' '}
-        <span role="img" aria-label="rocket">
-          🚀
-        </span>{' '}
-        que actualmente vive en Chile{' '}
-        <span role="img" aria-label="chile">
-          🇨🇱
-        </span>{' '}
-        .
-      </p>
+      <ul className="mx-auto my-6 max-w-sm text-left list-disc marker:text-pink-600">
+        <li>🧑‍💻 Cristhofer Andana Alcaino</li>
+        <li>🚀 Desarrollador de Software</li>
+        <li>🇨🇱 Chile</li>
+        <li>🏀 76ers</li>
+        <li>⚽ Arsenal F.C.</li>
+      </ul>
     </Content>
   </Main>
 );
