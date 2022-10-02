@@ -20,6 +20,8 @@ const Logo = () => {
             }deg);position: absolute;left: 50%;font-size: 0.75em;transform-origin: 0 100px;">${char}</span>`
         )
         .join('');
+
+      text.classList.remove('opacity-0');
     }
   }, [title]);
 
@@ -31,7 +33,7 @@ const Logo = () => {
       >
         <div id="logo" className="absolute rounded-full grayscale"></div>
         <div id="text" className="absolute w-full h-full">
-          <h1 className="text-black uppercase font-extrabold group-hover:text-pink-600">
+          <h1 className="text-black uppercase font-extrabold group-hover:text-pink-600 opacity-0">
             ${title}
           </h1>
         </div>
