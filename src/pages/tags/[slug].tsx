@@ -28,10 +28,10 @@ const DisplayTag = (props: ITagProps) => {
   return (
     <Main meta={<Meta title={tagTitle} description={tagTitle} />}>
       <div className="relative mb-16">
-        <h1 className="uppercase text-center font-black text-2xl text-black relative z-20">
+        <h1 className="uppercase text-center font-black text-2xl text-black relative z-20 dark:text-white">
           {props.tag}
         </h1>
-        <h2 className="absolute -top-8 left-0 right-0 text-center mx-auto text-6xl font-black uppercase text-black opacity-5 z-10">
+        <h2 className="absolute -top-8 left-0 right-0 text-center mx-auto text-6xl font-black uppercase text-black opacity-5 z-10 dark:text-white">
           {props.count}
         </h2>
       </div>
