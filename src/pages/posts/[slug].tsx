@@ -40,15 +40,15 @@ const DisplayPost = (props: IPostProps) => (
     }
   >
     <div className="relative mb-8">
-      <h1 className="text-center font-black text-3xl text-black relative z-20">
+      <h1 className="text-center font-black text-3xl text-black relative z-20 dark:text-white">
         {props.title}
       </h1>
-      <h2 className="absolute -top-6 left-0 right-0 text-center mx-auto text-6xl font-black uppercase text-black opacity-5 z-10">
+      <h2 className="absolute -top-6 left-0 right-0 text-center mx-auto text-6xl font-black uppercase text-black opacity-5 z-10 dark:text-white">
         {props.subtitle}
       </h2>
     </div>
 
-    <div className="text-center mb-8 uppercase font-bold text-black opacity-50 text-xs">
+    <div className="text-center mb-8 uppercase font-bold text-black opacity-50 text-xs dark:text-white">
       {format(new Date(props.date), 'LLLL dd, yyyy', {
         locale: esLocale,
       })}

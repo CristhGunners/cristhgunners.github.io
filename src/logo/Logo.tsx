@@ -29,11 +29,11 @@ const Logo = () => {
     <Link href={'/'} passHref>
       <div
         id="circle"
-        className="relative rounded-full bg-white flex justify-center items-center cursor-pointer group"
+        className="relative rounded-full bg-white flex justify-center items-center cursor-pointer group dark:bg-slate-900"
       >
         <div id="logo" className="absolute rounded-full grayscale"></div>
         <div id="text" className="absolute w-full h-full">
-          <h1 className="text-black uppercase font-extrabold group-hover:text-pink-600 opacity-0">
+          <h1 className="text-black uppercase font-extrabold group-hover:text-pink-600 opacity-0 dark:text-white">
             ${title}
           </h1>
         </div>
