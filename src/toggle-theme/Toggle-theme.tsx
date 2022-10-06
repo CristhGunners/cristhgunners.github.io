@@ -14,6 +14,8 @@ const ToggleTheme = () => {
   return (
     <button
       onClick={toggleTheme}
+      aria-label="Toggle Theme"
+      title="Toggle Theme"
       className="p-2 absolute top-4 left-0 rounded text-black  hover:text-pink-600 dark:text-white dark:hover:text-pink-600"
     >
       <svg

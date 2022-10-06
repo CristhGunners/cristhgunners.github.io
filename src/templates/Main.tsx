@@ -176,7 +176,6 @@ const Main = (props: IMainProps) => {
       >
         <circle cx="50" cy="50" r="50" fill="#DD34AF" />
       </svg>
-      <div className="hidden fixed inset-0 z-10 h-screen w-full scale-150 bg-white blur-3xl"></div>
     </div>
   );
 };
