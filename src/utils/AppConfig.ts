@@ -1,5 +1,5 @@
 export const AppConfig = {
-  site_name: 'CristhGunners',
+  site_name: 'Cristhofer Andana',
   title: 'CristhGunners',
   description: 'Desarrollador de Software',
   url: 'https://cristhgunners.github.io/',
