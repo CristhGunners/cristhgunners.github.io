@@ -8,7 +8,7 @@ class MyDocument extends Document {
     return (
       <Html lang={AppConfig.locale}>
         <Head />
-        <body className="dark:bg-slate-900">
+        <body className="transition-colors duration-300 dark:bg-slate-900">
           <Main />
           <NextScript />
         </body>

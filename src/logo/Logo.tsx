@@ -29,7 +29,7 @@ const Logo = () => {
     <Link href={'/'} passHref>
       <div
         id="circle"
-        className="relative rounded-full bg-white flex justify-center items-center cursor-pointer group dark:bg-slate-900"
+        className="relative rounded-full bg-transparent flex justify-center items-center cursor-pointer group"
       >
         <div id="logo" className="absolute rounded-full grayscale"></div>
         <div id="text" className="absolute w-full h-full">
