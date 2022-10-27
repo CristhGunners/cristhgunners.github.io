@@ -3,8 +3,7 @@ import React, { ReactNode } from 'react';
 import Link from 'next/link';
 
 import { Logo } from '../logo/Logo';
-import { Navbar } from '../navigation/Navbar';
-import { ToggleTheme } from '../toggle-theme/Toggle-theme';
+import { Menu } from '../menu/Menu';
 import { AppConfig } from '../utils/AppConfig';
 
 type IMainProps = {
@@ -18,34 +17,10 @@ const Main = (props: IMainProps) => {
       {props.meta}
 
       <div className="relative z-30 mx-auto max-w-screen-md">
-        <ToggleTheme />
+        <Menu />
+
         <div className="flex flex-col justify-center items-center pt-16 pb-8">
           <Logo />
-          <div className="mt-16">
-            <Navbar>
-              <li>
-                <Link href="/">
-                  <a className="font-bold text-black text-md hover:text-pink-600 dark:text-white dark:hover:text-pink-600">
-                    Inicio
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/about/">
-                  <a className="font-bold text-black text-md hover:text-pink-600 dark:text-white dark:hover:text-pink-600">
-                    Acerca
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/tags/">
-                  <a className="font-bold text-black text-md hover:text-pink-600 dark:text-white dark:hover:text-pink-600">
-                    Tags
-                  </a>
-                </Link>
-              </li>
-            </Navbar>
-          </div>
         </div>
 
         <div className="py-8 text-xl">{props.children}</div>
