@@ -3,6 +3,8 @@ import { join } from 'path';
 
 import matter from 'gray-matter';
 
+import projects from '../data/projects.json';
+
 const postsDirectory = join(process.cwd(), '_posts');
 
 export type PostItems = {
@@ -12,6 +14,15 @@ export type PostItems = {
 export type TagItem = {
   tag: string;
   count: number;
+};
+
+export type ProjectItem = {
+  title: string;
+  description: string;
+  url: string;
+  logo: string;
+  company: string;
+  role: string;
 };
 
 export function getPostSlugs() {
@@ -106,4 +117,8 @@ export function getPostsByTag(tag: string, fields: string[] = []) {
   });
 
   return filteredPosts;
+}
+
+export function getAllProjects(): ProjectItem[] {
+  return projects.projects;
 }
