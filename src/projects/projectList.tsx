@@ -15,7 +15,7 @@ const ProjectList = (props: IProjectListProps) => (
             <img
               src={`/assets/images/projects/${project.logo}`}
               alt={project.title}
-              className="w-6 h-6 rounded"
+              className="w-6 h-6"
             />
             <h2 className="font-bold text-black text-2xl text-left dark:text-white">
               {project.title}
