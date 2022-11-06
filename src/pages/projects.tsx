@@ -8,7 +8,7 @@ import { Main } from '../templates/Main';
 import { getAllProjects } from '../utils/Content';
 
 const Projects = (props: IProjectListProps) => (
-  <Main meta={<Meta title="Trabajos" description="Trabajos" />}>
+  <Main meta={<Meta title="Proyectos" description="Proyectos" />}>
     <ProjectList projects={props.projects} />
   </Main>
 );
