@@ -24,7 +24,7 @@ const ToggleTheme = () => {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="w-5 h-5 dark:hidden"
+        className="w-7 h-7 sm:w-5 sm:h-5 dark:hidden"
       >
         <path
           strokeLinecap="round"
@@ -38,7 +38,7 @@ const ToggleTheme = () => {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="w-5 h-5 hidden dark:block"
+        className="w-7 h-7 sm:w-5 sm:h-5 hidden dark:block"
       >
         <path
           strokeLinecap="round"

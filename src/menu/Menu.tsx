@@ -11,6 +11,9 @@ const Menu = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    // const html = document.querySelector('html') as unknown as HTMLElement;
+
+    // html.classList.toggle('overflow-hidden');
   };
 
   const router = useRouter();
@@ -21,7 +24,9 @@ const Menu = () => {
         aria-label="Toggle Menu"
         title="Toggle Menu"
         onClick={toggleMenu}
-        className="hidden p-2 absolute top-4 left-0 rounded text-black  hover:text-pink-600 dark:text-white dark:hover:text-pink-600"
+        className={`z-40 p-2 ${
+          isMenuOpen ? 'fixed left-4' : 'absolute left-0'
+        } top-4 rounded text-black  hover:text-pink-600 dark:text-white dark:hover:text-pink-600 sm:hidden`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,12 +57,16 @@ const Menu = () => {
           />
         </svg>
       </button>
-      <div className="w-100 flex items-center justify-between pt-6">
+      <div
+        className={`${
+          isMenuOpen ? 'flex' : 'hidden'
+        } fixed z-30 w-full m-auto inset-0 h-screen bg-white flex flex-col items-center justify-center dark:bg-slate-900 sm:flex-row sm:h-auto sm:bg-transparent sm:dark:bg-transparent sm:static sm:inset-auto sm:m-0 sm:items-center sm:justify-between sm:pt-6 sm:flex`}
+      >
         <Navbar>
           <li>
             <Link href="/">
               <a
-                className={`font-semibold text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
                   router.pathname === '/'
                     ? 'text-pink-600 dark:text-pink-600'
                     : 'text-black dark:text-white'
@@ -70,7 +79,7 @@ const Menu = () => {
           <li>
             <Link href="/about/">
               <a
-                className={`font-semibold text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
                   router.pathname === '/about'
                     ? 'text-pink-600 dark:text-pink-600'
                     : 'text-black dark:text-white'
@@ -83,7 +92,7 @@ const Menu = () => {
           <li>
             <Link href="/projects/">
               <a
-                className={`font-semibold text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
                   router.pathname === '/projects'
                     ? 'text-pink-600 dark:text-pink-600'
                     : 'text-black dark:text-white'
@@ -96,13 +105,26 @@ const Menu = () => {
           <li>
             <Link href="/tags/">
               <a
-                className={`font-semibold text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
                   router.pathname === '/tags'
                     ? 'text-pink-600 dark:text-pink-600'
                     : 'text-black dark:text-white'
                 }`}
               >
                 Tags
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/stats/">
+              <a
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                  router.pathname === '/stats'
+                    ? 'text-pink-600 dark:text-pink-600'
+                    : 'text-black dark:text-white'
+                }`}
+              >
+                Estadísticas
               </a>
             </Link>
           </li>
