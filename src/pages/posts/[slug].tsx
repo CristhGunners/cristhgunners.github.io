@@ -31,6 +31,7 @@ const DisplayPost = (props: IPostProps) => (
       <Meta
         title={props.title}
         description={props.description}
+        keywords={props.tags}
         post={{
           image: props.image,
           date: props.date,

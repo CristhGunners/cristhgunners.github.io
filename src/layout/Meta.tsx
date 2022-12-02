@@ -9,6 +9,7 @@ import { addTrailingSlash } from '../utils/Url';
 type IMetaProps = {
   title: string;
   description: string;
+  keywords?: string;
   canonical?: string;
   post?: {
     image: string;
@@ -72,6 +73,10 @@ const Meta = (props: IMetaProps) => {
             props.description ? props.description : AppConfig.description
           }
           key="description"
+        />
+        <meta
+          name="keywords"
+          content={`${props.keywords}, ${AppConfig.keywords}, ${AppConfig.site_name}, ${AppConfig.author}`}
         />
         <meta name="author" content={AppConfig.author} key="author" />
         {props.canonical && (
