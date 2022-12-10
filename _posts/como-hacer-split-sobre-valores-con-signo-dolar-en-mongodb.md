@@ -15,10 +15,10 @@ Data:
 ```json
 [
   {
-    "user": "$user-id-1"
+    "user": "user_id$user-id-1"
   },
   {
-    "user": "$user-id-2"
+    "user": "user_$user-id-2"
   }
 ]
 ```
@@ -45,4 +45,17 @@ db.collection.aggregate([
     }
   }
 ])
+```
+
+Resultado:
+
+```json
+[
+  {
+    "user_id": "user-id-1"
+  },
+  {
+    "user_id": "user-id-2"
+  }
+]
 ```
