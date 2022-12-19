@@ -1,6 +1,6 @@
 ---
-title: 'Crear un server local con Python en una linea'
-description: 'Crear un server local con Python en una linea.'
+title: 'Crear un servidor local con Python en una linea'
+description: 'Crear un servidor local con Python en una linea.'
 date: '2022/12/18'
 modified_date: '2022/12/18'
 image: /assets/images/posts/python.png
@@ -8,7 +8,7 @@ subtitle: 'python'
 tags: 'python'
 ---
 
-Como crear un server local con Python en una linea :
+Como crear un servidor local con Python en una linea :
 
 Python 2 :
 
