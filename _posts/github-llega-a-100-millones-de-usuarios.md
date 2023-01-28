@@ -8,4 +8,4 @@ subtitle: 'news'
 tags: 'news'
 ---
 
-Github llega a los 100 millones de usuarios : [tweet](https://github.blog/2023-01-25-100-million-developers-and-counting/)
+Github llega a los 100 millones de usuarios : [github](https://github.blog/2023-01-25-100-million-developers-and-counting/)
