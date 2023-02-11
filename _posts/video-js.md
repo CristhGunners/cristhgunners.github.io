@@ -1,5 +1,5 @@
 ---
-title: 'Video JS: Reproductor de video web moderno.'
+title: 'Video JS: Reproductor de video web moderno'
 description: 'Video JS: Reproductor de video web moderno.'
 date: '2023/02/11'
 modified_date: '2023/02/11'
