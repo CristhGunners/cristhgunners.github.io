@@ -1,5 +1,5 @@
 ---
-title: 'Figma Plugins: Exporta una animación a GIFo Video'
+title: 'Figma Plugins: Exporta una animación a GIF o Video'
 description: 'Figma Plugins: Exporta una animación a GIF o Video.'
 date: '2023/02/16'
 modified_date: '2023/02/16'
