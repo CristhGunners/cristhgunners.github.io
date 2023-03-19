@@ -64,6 +64,16 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/safari-pinned-tab.svg`}
           color="#d53f8c"
         />
+        <link
+          rel="preload"
+          as="image"
+          href={`${router.basePath}/assets/images/projects/coolors-logo.png`}
+        />
+        <link
+          rel="preload"
+          as="image"
+          href={`${router.basePath}/assets/images/projects/mhn-logo.png`}
+        />
         <meta name="msapplication-TileColor" content="#d53f8c" />
         <meta name="theme-color" content="#d53f8c" />
         <title>{`${props.title} - ${AppConfig.site_name}`}</title>
