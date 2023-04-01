@@ -16,6 +16,7 @@ type IMetaProps = {
     date: string;
     modified_date: string;
   };
+  preloadProjectLogos?: string[];
 };
 
 const Meta = (props: IMetaProps) => {
@@ -64,16 +65,15 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/safari-pinned-tab.svg`}
           color="#d53f8c"
         />
-        <link
-          rel="preload"
-          as="image"
-          href={`${router.basePath}/assets/images/projects/coolors-logo.png`}
-        />
-        <link
-          rel="preload"
-          as="image"
-          href={`${router.basePath}/assets/images/projects/mhn-logo.png`}
-        />
+        {props.preloadProjectLogos &&
+          props.preloadProjectLogos.map((logo) => (
+            <link
+              rel="preload"
+              key={logo}
+              as="image"
+              href={`${router.basePath}/assets/images/projects/${logo}`}
+            />
+          ))}
         <meta name="msapplication-TileColor" content="#d53f8c" />
         <meta name="theme-color" content="#d53f8c" />
         <title>{`${props.title} - ${AppConfig.site_name}`}</title>
