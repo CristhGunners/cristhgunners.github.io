@@ -67,6 +67,11 @@ const Meta = (props: IMetaProps) => {
         <link
           rel="preload"
           as="image"
+          href={`${router.basePath}/assets/images/profile.jpeg`}
+        />
+        <link
+          rel="preload"
+          as="image"
           href={`${router.basePath}/assets/images/projects/coolors-logo.png`}
         />
         <link
