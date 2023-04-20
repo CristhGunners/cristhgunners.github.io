@@ -19,5 +19,12 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["Blisk", "Calver", "Coverr", "Magdeleine", "Notwer"]
+  "cSpell.words": [
+    "Blisk",
+    "Calver",
+    "Coverr",
+    "Fotoramio",
+    "Magdeleine",
+    "Notwer"
+  ]
 }
