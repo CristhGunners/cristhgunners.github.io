@@ -8,4 +8,4 @@ subtitle: 'behance'
 tags: 'behance'
 ---
 
-Behance Project: [100 Days Of UI Part 1](hhttps://www.behance.net/gallery/40794029/100-Days-Of-UI-Part-1)
+Behance Project: [100 Days Of UI Part 1](https://www.behance.net/gallery/40794029/100-Days-Of-UI-Part-1)
