@@ -44,7 +44,7 @@ const DisplayPost = (props: IPostProps) => (
       <h1 className="text-center font-black text-3xl text-black relative z-20 dark:text-white">
         {props.title}
       </h1>
-      <h2 className="absolute -top-6 left-0 right-0 text-center mx-auto text-6xl font-black uppercase text-black opacity-5 z-10 dark:text-white">
+      <h2 className="absolute -top-6 left-0 right-0 text-center mx-auto text-6xl font-black uppercase text-black opacity-5 z-10 select-none dark:text-white">
         {props.subtitle}
       </h2>
     </div>

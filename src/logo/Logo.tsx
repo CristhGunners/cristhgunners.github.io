@@ -33,7 +33,7 @@ const Logo = () => {
       >
         <div id="logo" className="absolute rounded-full grayscale"></div>
         <div id="text" className="absolute w-full h-full">
-          <h1 className="text-black uppercase font-extrabold group-hover:text-pink-600 opacity-0 dark:text-white">
+          <h1 className="text-black uppercase font-extrabold select-none group-hover:text-pink-600 opacity-0 dark:text-white">
             ${title}
           </h1>
         </div>

@@ -23,7 +23,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
             </a>
           </Link>
 
-          <h3 className="absolute -top-8 left-0 text-6xl font-black uppercase text-black opacity-5 z-10 dark:text-white hidden sm:block">
+          <h3 className="absolute -top-8 left-0 text-6xl font-black uppercase text-black opacity-5 z-10 select-none dark:text-white">
             {elt.subtitle}
           </h3>
 
