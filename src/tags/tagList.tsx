@@ -9,7 +9,7 @@ export type ITagListProps = {
 };
 
 const TagList = (props: ITagListProps) => (
-  <div className="w-full sm:grid sm:overflow-hidden sm:grid-cols-2 sm:grid-rows-2 sm:gap-4">
+  <div className="w-full sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-4">
     {props.tags.map((tag) => (
       <Link href={'/tags/[slug]'} as={`/tags/${tag.tag}`} key={tag.tag}>
         <a className="bg-gray-200 p-2 rounded inline-block w-full mb-4 hover:bg-gray-300 sm:mb-0 dark:bg-slate-700 dark:hover:bg-slate-800">
