@@ -41,7 +41,7 @@ jobs:
           elif [ -f "${{ github.workspace }}/package.json" ]; then
             echo "::set-output name=manager::bun"
             echo "::set-output name=command::install"
-            echo "::set-output name=runner::bun install"
+            echo "::set-output name=runner::bun run"
             exit 0
           else
             echo "Unable to determine packager manager"
@@ -62,7 +62,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.manager }} run build-prod
+        run: ${{ steps.detect-package-manager.outputs.runner }} build-prod
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
