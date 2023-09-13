@@ -66,7 +66,7 @@ const Menu = () => {
           <li>
             <Link href="/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
                   router.pathname === '/'
                     ? 'text-pink-600 dark:text-pink-600'
                     : 'text-black dark:text-white'
@@ -79,7 +79,7 @@ const Menu = () => {
           <li>
             <Link href="/about/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
                   router.pathname === '/about'
                     ? 'text-pink-600 dark:text-pink-600'
                     : 'text-black dark:text-white'
@@ -92,7 +92,7 @@ const Menu = () => {
           <li>
             <Link href="/projects/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
                   router.pathname === '/projects'
                     ? 'text-pink-600 dark:text-pink-600'
                     : 'text-black dark:text-white'
@@ -105,7 +105,7 @@ const Menu = () => {
           <li>
             <Link href="/tags/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
                   router.pathname === '/tags'
                     ? 'text-pink-600 dark:text-pink-600'
                     : 'text-black dark:text-white'
@@ -118,7 +118,7 @@ const Menu = () => {
           <li>
             <Link href="/stats/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:text-white dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
                   router.pathname === '/stats'
                     ? 'text-pink-600 dark:text-pink-600'
                     : 'text-black dark:text-white'
