@@ -4,7 +4,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 
 import { BlogGalleryTag } from '../../../blog/BlogGalleryTag';
 import { Meta } from '../../../layout/Meta';
-import { IPaginationProps } from '../../../pagination/Pagination';
+import { IPaginationByTagProps } from '../../../pagination/PaginationByTag';
 import { Main } from '../../../templates/Main';
 import { AppConfig } from '../../../utils/AppConfig';
 import {
@@ -24,7 +24,7 @@ type ITagProps = {
   tag: string;
   count: number;
   posts: PostItems[];
-  pagination: IPaginationProps;
+  pagination: IPaginationByTagProps;
 };
 
 const PaginatePosts = (props: ITagProps) => {
@@ -109,7 +109,7 @@ export const getStaticProps: GetStaticProps<ITagProps, IPageUrl> = async ({
   const currentPage = Number(params!.page.replace('page', ''));
   const currentInd = currentPage - 1;
 
-  const pagination: IPaginationProps = {};
+  const pagination: IPaginationByTagProps = { tag: tag.tag };
 
   if (currentPage < pages.length) {
     pagination.next = `/tags/${tag.tag}/page${currentPage + 1}`;
