@@ -4,14 +4,16 @@ import { format } from 'date-fns';
 import esLocale from 'date-fns/locale/es';
 import Link from 'next/link';
 
-import { IPaginationProps } from '../pagination/Pagination';
-import { PaginationByTag } from '../pagination/PaginationByTag';
+import {
+  PaginationByTag,
+  IPaginationByTagProps,
+} from '../pagination/PaginationByTag';
 import { PostItems } from '../utils/Content';
 
 export type IBlogGalleryTagProps = {
   tag: string;
   posts: PostItems[];
-  pagination: IPaginationProps;
+  pagination: IPaginationByTagProps;
 };
 
 const BlogGalleryTag = (props: IBlogGalleryTagProps) => (
