@@ -19,3 +19,11 @@ export function convertUrlToLinkHref(url: string) {
 
   return '/[page]';
 }
+
+export function convertUrlToLinkHrefByTag(url: string, tag: string) {
+  if (url === `/tags/${tag}`) {
+    return `/tags/${tag}`;
+  }
+
+  return `/tags/${tag}/[page]`;
+}

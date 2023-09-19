@@ -4,10 +4,14 @@ import { format } from 'date-fns';
 import esLocale from 'date-fns/locale/es';
 import Link from 'next/link';
 
+import { IPaginationProps } from '../pagination/Pagination';
+import { PaginationByTag } from '../pagination/PaginationByTag';
 import { PostItems } from '../utils/Content';
 
 export type IBlogGalleryTagProps = {
+  tag: string;
   posts: PostItems[];
+  pagination: IPaginationProps;
 };
 
 const BlogGalleryTag = (props: IBlogGalleryTagProps) => (
@@ -33,6 +37,12 @@ const BlogGalleryTag = (props: IBlogGalleryTagProps) => (
         </li>
       ))}
     </ul>
+
+    <PaginationByTag
+      previous={props.pagination.previous}
+      next={props.pagination.next}
+      tag={props.tag}
+    />
   </>
 );
 
