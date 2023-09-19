@@ -11,7 +11,7 @@ const NotFound = () => (
     }
   >
     <Content>
-      <span className="block text-black text-6xl font-bold text-center mx-auto my-0 dark:text-white">
+      <span className="block text-pink-600 text-6xl font-bold text-center mx-auto my-0">
         404
       </span>
       <p className="mx-auto my-6 max-w-sm text-center">Pagina no encontrada</p>
