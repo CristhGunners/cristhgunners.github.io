@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "title": "EmFaces",
+      "description": "Colección gratuita de emoticons.",
+      "url": "https://emoticonfaces.com/",
+      "logo": "emfaces.svg",
+      "company": "Proyecto Personal",
+      "role": "Frontend Developer"
+    },
+    {
       "title": "Minimal Hacker News",
       "description": "Version minimal del popular sitio Hacker News, los mejores artículos de tecnología, programación y mas. Enfocado en la simpleza y con un renovado diseño del feed.",
       "url": "https://cristhgunners.github.io/MinimalHackerNews/",
