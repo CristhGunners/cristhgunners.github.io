@@ -6,6 +6,7 @@ modified_date: '2022/12/31'
 image: /assets/images/posts/webapp.png
 subtitle: 'webapp'
 tags: 'webapp'
+is_project: 'true'
 ---
 
-Mis paletas de colores : [Coolors](https://cristhgunners.github.io/Coolors/)
+Mis paletas de colores: [Coolors](https://cristhgunners.github.io/Coolors/)

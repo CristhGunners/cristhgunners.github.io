@@ -6,6 +6,7 @@ modified_date: '2022/12/26'
 image: /assets/images/posts/webapp.png
 subtitle: 'webapp'
 tags: 'webapp'
+is_project: 'true'
 ---
 
-Minimal Hacker News : [MinimalHackerNews](https://cristhgunners.github.io/MinimalHackerNews/)
+Minimal Hacker News: [MinimalHackerNews](https://cristhgunners.github.io/MinimalHackerNews/)
