@@ -44,6 +44,9 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     if (field === 'content') {
       items[field] = content;
     }
+    if (field === 'is_project') {
+      items[field] = data[field] ? data[field] : 'false';
+    }
 
     if (data[field]) {
       items[field] = data[field];
