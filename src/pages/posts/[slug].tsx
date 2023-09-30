@@ -23,6 +23,7 @@ type IPostProps = {
   content: string;
   subtitle: string;
   tags: string;
+  is_project: string;
 };
 
 const DisplayPost = (props: IPostProps) => (
@@ -41,6 +42,13 @@ const DisplayPost = (props: IPostProps) => (
     }
   >
     <div className="relative mb-8">
+      {props.is_project === 'true' ? (
+        <span className="bg-pink-600 text-white text-xs font-bold px-2.5 py-0.5 rounded absolute -top-8 left-1/2 transform -translate-x-1/2">
+          Proyecto
+        </span>
+      ) : (
+        ''
+      )}
       <h1 className="text-center font-black text-3xl text-black relative z-20 dark:text-white">
         {props.title}
       </h1>
@@ -90,6 +98,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
     'slug',
     'subtitle',
     'tags',
+    'is_project',
   ]);
   const content = await markdownToHtml(post.content || '');
 
@@ -103,6 +112,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
       content,
       subtitle: post.subtitle,
       tags: post.tags,
+      is_project: post.is_project,
     },
   };
 };

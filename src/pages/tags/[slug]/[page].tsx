@@ -103,6 +103,7 @@ export const getStaticProps: GetStaticProps<ITagProps, IPageUrl> = async ({
     'slug',
     'subtitle',
     'tags',
+    'is_project',
   ]);
 
   const pages = convertTo2D(posts, AppConfig.pagination_size);

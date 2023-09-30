@@ -21,6 +21,13 @@ const BlogGalleryTag = (props: IBlogGalleryTagProps) => (
     <ul>
       {props.posts.map((elt) => (
         <li key={elt.slug} className="mb-12 flex flex-col items-start relative">
+          {elt.is_project === 'true' ? (
+            <span className="bg-pink-600 text-white text-xs font-bold px-2.5 py-0.5 rounded absolute -top-6 left-0">
+              Proyecto
+            </span>
+          ) : (
+            ''
+          )}
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
             <a className="text-black font-black z-20 hover:text-pink-600 dark:text-white dark:hover:text-pink-600">
               <h2>{elt.title}</h2>

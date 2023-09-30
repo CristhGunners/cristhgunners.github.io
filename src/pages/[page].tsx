@@ -44,7 +44,13 @@ export const getStaticProps: GetStaticProps<
   IBlogGalleryProps,
   IPageUrl
 > = async ({ params }) => {
-  const posts = getAllPosts(['title', 'date', 'slug', 'subtitle']);
+  const posts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+    'subtitle',
+    'is_project',
+  ]);
 
   const pages = convertTo2D(posts, AppConfig.pagination_size);
   const currentPage = Number(params!.page.replace('page', ''));

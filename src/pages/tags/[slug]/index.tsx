@@ -78,6 +78,7 @@ export const getStaticProps: GetStaticProps<ITagProps, ITagUrl> = async ({
     'slug',
     'subtitle',
     'tags',
+    'is_project',
   ]);
 
   const pagination: IPaginationByTagProps = { tag: tag.tag };
