@@ -8,4 +8,4 @@ subtitle: 'design'
 tags: 'design'
 ---
 
-Vercel libera su fuente [Geist](https://ant.design/) de forma gratuita.
+Vercel libera su fuente [Geist](https://vercel.com/font) de forma gratuita.
