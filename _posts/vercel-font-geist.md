@@ -1,5 +1,5 @@
 ---
-title: 'Vercel libera su fuente Geist de forma gratuita.'
+title: 'Vercel libera su fuente Geist de forma gratuita'
 description: 'Vercel libera su fuente Geist de forma gratuita.'
 date: '2023/11/03'
 modified_date: '2023/11/03'
