@@ -1,8 +1,8 @@
 ---
 title: 'Temas de VSCode: Hadar'
 description: 'Temas de VSCode: Hadar.'
-date: '2023/11/23'
-modified_date: '2023/11/23'
+date: '2023/11/24'
+modified_date: '2023/11/24'
 image: /assets/images/posts/vscode.png
 subtitle: 'vscode'
 tags: 'vscode'
