@@ -29,7 +29,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
           )}
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
             <a className="font-black text-black hover:text-cyan-600 dark:text-white dark:hover:text-cyan-600">
-              <h2 className="sm:leading-none">
+              <h2>
                 {elt.title} {elt.project}
               </h2>
             </a>
