@@ -29,33 +29,33 @@ const ProjectList = (props: IProjectListProps) => (
           </p>
           <ul className="mt-8">
             <li className="mb-2 flex items-center justify-start">
-              <span className="w-28 text-base font-bold text-black dark:text-white">
+              <span className="w-28 text-base font-normal text-black dark:text-white">
                 Website:{' '}
               </span>{' '}
-              <span className="break-all text-base text-black dark:text-white">
+              <span className="break-all text-base text-black dark:text-neutral-400">
                 <a
                   href={project.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="underline hover:text-cyan-600"
+                  className="hover:underline dark:hover:text-white"
                 >
                   {project.title}
                 </a>
               </span>
             </li>
             <li className="mb-2 flex items-center justify-start">
-              <span className="w-28 text-base font-bold text-black dark:text-white">
+              <span className="w-28 text-base font-normal text-black dark:text-white">
                 Compañía:{' '}
               </span>{' '}
-              <span className="text-base text-black dark:text-white">
+              <span className="text-base text-black dark:text-neutral-400">
                 {project.company}
               </span>
             </li>
             <li className="flex items-center justify-start">
-              <span className="w-28 text-base font-bold text-black dark:text-white">
+              <span className="w-28 text-base font-normal text-black dark:text-white">
                 Rol:{' '}
               </span>{' '}
-              <span className="text-base text-black dark:text-white">
+              <span className="text-base text-black dark:text-neutral-400">
                 {project.role}
               </span>
             </li>

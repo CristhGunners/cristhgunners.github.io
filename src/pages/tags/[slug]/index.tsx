@@ -30,11 +30,11 @@ const DisplayTag = (props: ITagProps) => {
 
   return (
     <Main meta={<Meta title={tagTitle} description={tagTitle} />}>
-      <div className="mb-16 flex flex-col items-center justify-center">
+      <div className="mb-16 flex flex-col items-center justify-center space-y-2">
         <h1 className="text-center text-2xl font-black uppercase text-black dark:text-white">
           {props.tag}
         </h1>
-        <h2 className="mx-auto rounded border border-neutral-200 bg-white p-2 py-1 text-center text-sm font-black uppercase text-black dark:border-neutral-700 dark:bg-neutral-800 dark:text-white">
+        <h2 className="mx-auto p-2 text-center text-sm font-black uppercase text-neutral-400 dark:text-white">
           {props.count}
         </h2>
       </div>
