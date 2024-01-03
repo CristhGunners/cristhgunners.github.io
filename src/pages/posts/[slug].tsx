@@ -43,21 +43,37 @@ const DisplayPost = (props: IPostProps) => (
   >
     <div className="mb-8 flex flex-col items-center justify-center space-y-2">
       {props.is_project === 'true' ? (
-        <span className="mx-auto block w-20 rounded bg-cyan-600 px-2.5 py-0.5 text-center text-xs font-bold text-white">
-          Proyecto
-        </span>
+        <div className="flex items-center justify-center space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="h-6 w-6 dark:text-neutral-400"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+            />
+          </svg>
+          <span className="text-right text-xs font-black uppercase text-neutral-400">
+            Proyecto
+          </span>
+        </div>
       ) : (
         ''
       )}
-      <h1 className="text-center text-3xl font-black text-black dark:text-white">
+      <h1 className="text-center text-2xl font-bold text-black dark:text-white">
         {props.title}
       </h1>
-      <h2 className="rounded border border-neutral-200 bg-white p-2 text-center text-sm font-black uppercase text-black dark:border-neutral-700 dark:bg-neutral-800 dark:text-white">
+      <h2 className="text-center text-sm font-black uppercase text-neutral-400 dark:text-neutral-400">
         {props.subtitle}
       </h2>
     </div>
 
-    <div className="mb-8 text-center text-xs font-bold uppercase text-black opacity-50 dark:text-white">
+    <div className="mb-8 text-center text-xs font-bold uppercase text-neutral-400 dark:text-neutral-400">
       {format(new Date(props.date), 'LLLL dd, yyyy', {
         locale: esLocale,
       })}

@@ -25,7 +25,7 @@ const Menu = () => {
         onClick={toggleMenu}
         className={`z-40 p-2 ${
           isMenuOpen ? 'fixed left-4' : 'absolute left-0'
-        } top-4 rounded text-black  hover:text-cyan-600 dark:text-white dark:hover:text-cyan-600 sm:hidden`}
+        } top-4 rounded text-neutral-400  hover:text-black dark:text-neutral-400 dark:hover:text-white sm:hidden`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -65,10 +65,10 @@ const Menu = () => {
           <li>
             <Link href="/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
+                className={`font-normal text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
                   router.pathname === '/'
-                    ? 'text-cyan-600 dark:text-cyan-600'
-                    : 'text-black dark:text-neutral-400'
+                    ? 'text-black bg-white border-neutral-200 border hover:border-neutral-300 dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
+                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
                 }`}
               >
                 Inicio
@@ -78,10 +78,10 @@ const Menu = () => {
           <li>
             <Link href="/about/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
+                className={`font-normal text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
                   router.pathname === '/about'
-                    ? 'text-cyan-600 dark:text-cyan-600'
-                    : 'text-black dark:text-neutral-400'
+                    ? 'text-black bg-white border-neutral-200 border hover:border-neutral-300 dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
+                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
                 }`}
               >
                 Acerca
@@ -91,10 +91,10 @@ const Menu = () => {
           <li>
             <Link href="/projects/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
+                className={`font-normal text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
                   router.pathname === '/projects'
-                    ? 'text-cyan-600 dark:text-cyan-600'
-                    : 'text-black dark:text-neutral-400'
+                    ? 'text-black bg-white border-neutral-200 hover:border-neutral-300 border dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
+                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
                 }`}
               >
                 Proyectos
@@ -104,10 +104,10 @@ const Menu = () => {
           <li>
             <Link href="/tags/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
+                className={`font-normal text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
                   router.pathname === '/tags'
-                    ? 'text-cyan-600 dark:text-cyan-600'
-                    : 'text-black dark:text-neutral-400'
+                    ? 'text-black bg-white border-neutral-200 border hover:border-neutral-300 dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
+                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
                 }`}
               >
                 Tags
@@ -117,10 +117,10 @@ const Menu = () => {
           <li>
             <Link href="/stats/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
+                className={`font-regular text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
                   router.pathname === '/stats'
-                    ? 'text-cyan-600 dark:text-cyan-600 dark:border-neutral-600'
-                    : 'text-black dark:text-neutral-400'
+                    ? 'text-black bg-white border-neutral-200 border hover:border-neutral-300 dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
+                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
                 }`}
               >
                 Estadísticas

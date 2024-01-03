@@ -9,14 +9,14 @@ export type IStatsListProps = {
 const StatsList = (props: IStatsListProps) => (
   <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0">
     <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
-      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded border border-cyan-400 bg-cyan-600">
+      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded dark:border dark:border-neutral-800 dark:bg-neutral-800">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="h-6 w-6 text-white"
+          className="h-6 w-6 text-neutral-400"
         >
           <path
             strokeLinecap="round"
@@ -28,19 +28,19 @@ const StatsList = (props: IStatsListProps) => (
       <h2 className="my-4 text-center font-bold text-black dark:text-white">
         Artículos
       </h2>
-      <h3 className="text-center text-3xl font-bold text-cyan-600 dark:text-white">
+      <h3 className="text-center text-3xl font-bold text-neutral-400 dark:text-white">
         {props.postsCount}
       </h3>
     </div>
     <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
-      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded border border-cyan-400 bg-cyan-600">
+      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded dark:border dark:border-neutral-800 dark:bg-neutral-800">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="h6 w-6 text-white"
+          className="h6 w-6 text-neutral-400"
         >
           <path
             strokeLinecap="round"
@@ -57,19 +57,19 @@ const StatsList = (props: IStatsListProps) => (
       <h2 className="my-4 text-center font-bold text-black dark:text-white">
         Tags
       </h2>
-      <h3 className="text-center text-3xl font-bold text-cyan-600 dark:text-white">
+      <h3 className="text-center text-3xl font-bold text-neutral-400 dark:text-white">
         {props.tagsCount}
       </h3>
     </div>
     <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
-      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded border border-cyan-400 bg-cyan-600">
+      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded dark:border dark:border-neutral-800 dark:bg-neutral-800">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="h-6 w-6 text-white"
+          className="h-6 w-6 text-neutral-400"
         >
           <path
             strokeLinecap="round"
@@ -81,7 +81,7 @@ const StatsList = (props: IStatsListProps) => (
       <h2 className="my-4 text-center font-bold text-black dark:text-white">
         Proyectos
       </h2>
-      <h3 className="text-center text-3xl font-bold text-cyan-600 dark:text-white">
+      <h3 className="text-center text-3xl font-bold text-neutral-400 dark:text-white">
         {props.projectsCount}
       </h3>
     </div>
