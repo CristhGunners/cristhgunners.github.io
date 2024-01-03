@@ -12,12 +12,12 @@ const TagList = (props: ITagListProps) => (
   <div className="w-full sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-4">
     {props.tags.map((tag) => (
       <Link href={'/tags/[slug]'} as={`/tags/${tag.tag}`} key={tag.tag}>
-        <a className="bg-gray-200 p-2 rounded inline-block w-full mb-4 hover:bg-gray-300 sm:mb-0 dark:bg-slate-700 dark:hover:bg-slate-800">
+        <a className="group mb-4 inline-block w-full rounded border border-neutral-200 bg-neutral-50 p-2 transition-all hover:border-neutral-300 sm:mb-0 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-neutral-600">
           <span className="flex items-center space-x-2">
-            <span className="bg-pink-600 flex items-center justify-center text-white font-extrabold rounded h-8 w-8 text-sm">
+            <span className="flex h-8 w-8 items-center justify-center rounded border border-cyan-400 bg-cyan-600 text-sm font-extrabold text-white">
               {tag.count}
             </span>
-            <span className="text-sm uppercase text-black font-bold dark:text-white">
+            <span className="text-sm font-bold uppercase text-black transition-all dark:text-white">
               {tag.tag}
             </span>
           </span>

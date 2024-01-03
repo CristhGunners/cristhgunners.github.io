@@ -41,23 +41,23 @@ const DisplayPost = (props: IPostProps) => (
       />
     }
   >
-    <div className="relative mb-8">
+    <div className="mb-8 flex flex-col items-center justify-center space-y-2">
       {props.is_project === 'true' ? (
-        <span className="bg-pink-600 text-white text-xs font-bold px-2.5 py-0.5 rounded absolute -top-8 left-1/2 transform -translate-x-1/2">
+        <span className="mx-auto block w-20 rounded bg-cyan-600 px-2.5 py-0.5 text-center text-xs font-bold text-white">
           Proyecto
         </span>
       ) : (
         ''
       )}
-      <h1 className="text-center font-black text-3xl text-black relative z-20 dark:text-white">
+      <h1 className="text-center text-3xl font-black text-black dark:text-white">
         {props.title}
       </h1>
-      <h2 className="absolute -top-6 left-0 right-0 text-center mx-auto text-6xl font-black uppercase text-black opacity-5 z-10 select-none dark:text-white">
+      <h2 className="rounded border border-neutral-200 bg-white p-2 text-center text-sm font-black uppercase text-black dark:border-neutral-700 dark:bg-neutral-800 dark:text-white">
         {props.subtitle}
       </h2>
     </div>
 
-    <div className="text-center mb-8 uppercase font-bold text-black opacity-50 text-xs dark:text-white">
+    <div className="mb-8 text-center text-xs font-bold uppercase text-black opacity-50 dark:text-white">
       {format(new Date(props.date), 'LLLL dd, yyyy', {
         locale: esLocale,
       })}

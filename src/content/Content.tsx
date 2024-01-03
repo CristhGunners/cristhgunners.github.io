@@ -31,7 +31,7 @@ const Content = (props: IContentProps) => (
         }
 
         .content :global(a) {
-          @apply text-pink-600;
+          @apply text-cyan-600;
         }
 
         .content :global(a):hover {

@@ -16,7 +16,7 @@ const ToggleTheme = () => {
       onClick={toggleTheme}
       aria-label="Toggle Theme"
       title="Toggle Theme"
-      className="p-2 rounded text-black  hover:text-pink-600 dark:text-white dark:hover:text-pink-600"
+      className="rounded border border-neutral-200 bg-white px-3 py-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const ToggleTheme = () => {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="w-7 h-7 sm:w-5 sm:h-5 dark:hidden"
+        className="h-7 w-7 sm:h-5 sm:w-5 dark:hidden"
       >
         <path
           strokeLinecap="round"
@@ -38,7 +38,7 @@ const ToggleTheme = () => {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="w-7 h-7 sm:w-5 sm:h-5 hidden dark:block"
+        className="hidden h-7 w-7 sm:h-5 sm:w-5 dark:block"
       >
         <path
           strokeLinecap="round"

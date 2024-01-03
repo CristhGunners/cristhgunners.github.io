@@ -6,9 +6,9 @@ import { AppConfig } from '../utils/AppConfig';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang={AppConfig.locale}>
+      <Html lang={AppConfig.locale} className="dark">
         <Head />
-        <body className="transition-colors duration-300 dark:bg-slate-900">
+        <body className="bg-neutral-100 transition-colors duration-300 dark:bg-neutral-950">
           <Main />
           <NextScript />
         </body>

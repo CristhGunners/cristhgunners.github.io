@@ -49,6 +49,7 @@ export const getStaticProps: GetStaticProps<
     'date',
     'slug',
     'subtitle',
+    'tags',
     'is_project',
   ]);
 

@@ -11,14 +11,14 @@ export type IPaginationByTagProps = {
 };
 
 const PaginationByTag = (props: IPaginationByTagProps) => (
-  <div className="text-sm flex justify-between">
+  <div className="flex justify-between text-sm">
     {props.previous && (
       <div>
         <Link
           href={convertUrlToLinkHrefByTag(props.previous, props.tag)}
           as={props.previous}
         >
-          <a className="hover:text-black dark:text-slate-400 dark:hover:text-white">
+          <a className="rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
             ← Artículos Recientes
           </a>
         </Link>
@@ -26,12 +26,12 @@ const PaginationByTag = (props: IPaginationByTagProps) => (
     )}
 
     {props.next && (
-      <div className="text-right ml-auto">
+      <div className="ml-auto text-right">
         <Link
           href={convertUrlToLinkHrefByTag(props.next, props.tag)}
           as={props.next}
         >
-          <a className="hover:text-black dark:text-slate-400 dark:hover:text-white">
+          <a className="rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
             Artículos Pasados →
           </a>
         </Link>
