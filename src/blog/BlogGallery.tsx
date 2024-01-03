@@ -16,27 +16,32 @@ const BlogGallery = (props: IBlogGalleryProps) => (
   <>
     <ul>
       {props.posts.map((elt) => (
-        <li key={elt.slug} className="mb-12 flex flex-col items-start relative">
+        <li
+          key={elt.slug}
+          className="relative mb-12 flex flex-col items-start space-y-3 px-0 py-0"
+        >
           {elt.is_project === 'true' ? (
-            <span className="bg-pink-600 text-white text-xs font-bold px-2.5 py-0.5 rounded absolute -top-6 left-0">
+            <span className="absolute -top-6 left-0 rounded bg-cyan-600 px-2.5 py-0.5 text-xs font-bold text-white">
               Proyecto
             </span>
           ) : (
             ''
           )}
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-            <a className="text-black font-black z-20 hover:text-pink-600 dark:text-white dark:hover:text-pink-600">
-              <h2>
+            <a className="font-black text-black hover:text-cyan-600 dark:text-white dark:hover:text-cyan-600">
+              <h2 className="sm:leading-none">
                 {elt.title} {elt.project}
               </h2>
             </a>
           </Link>
 
-          <h3 className="absolute -top-8 left-0 text-6xl font-black uppercase text-black opacity-5 z-10 select-none dark:text-white">
-            {elt.subtitle}
-          </h3>
+          <Link href="/tags/[slug]" as={`/tags/${elt.tags}`}>
+            <a className="rounded border border-neutral-200 bg-white p-2 text-xs font-black uppercase text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
+              <h3>{elt.tags}</h3>
+            </a>
+          </Link>
 
-          <div className="text-right uppercase font-bold mt-4 text-black opacity-50 text-xs z-20 dark:text-white">
+          <div className="text-right text-xs font-bold uppercase text-neutral-400 dark:text-neutral-400">
             {format(new Date(elt.date), 'LLLL dd, yyyy', {
               locale: esLocale,
             })}

@@ -7,16 +7,16 @@ export type IStatsListProps = {
 };
 
 const StatsList = (props: IStatsListProps) => (
-  <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-8">
-    <div className="p-8 rounded bg-gray-200 w-full dark:bg-slate-700">
-      <div className="bg-pink-600 w-10 h-10 flex items-center justify-center rounded mx-auto">
+  <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0">
+    <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
+      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded border border-cyan-400 bg-cyan-600">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-6 h-6 text-white"
+          className="h-6 w-6 text-white"
         >
           <path
             strokeLinecap="round"
@@ -25,22 +25,22 @@ const StatsList = (props: IStatsListProps) => (
           />
         </svg>
       </div>
-      <h2 className="font-bold text-black text-center my-4 dark:text-white">
+      <h2 className="my-4 text-center font-bold text-black dark:text-white">
         Artículos
       </h2>
-      <h3 className="font-bold text-pink-600 text-center text-3xl dark:text-white">
+      <h3 className="text-center text-3xl font-bold text-cyan-600 dark:text-white">
         {props.postsCount}
       </h3>
     </div>
-    <div className="p-8 rounded bg-gray-200 w-full dark:bg-slate-700">
-      <div className="bg-pink-600 w-10 h-10 flex items-center justify-center rounded mx-auto">
+    <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
+      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded border border-cyan-400 bg-cyan-600">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-6 h6 text-white"
+          className="h6 w-6 text-white"
         >
           <path
             strokeLinecap="round"
@@ -54,22 +54,22 @@ const StatsList = (props: IStatsListProps) => (
           />
         </svg>
       </div>
-      <h2 className="font-bold text-black text-center my-4 dark:text-white">
+      <h2 className="my-4 text-center font-bold text-black dark:text-white">
         Tags
       </h2>
-      <h3 className="font-bold text-pink-600 text-center text-3xl dark:text-white">
+      <h3 className="text-center text-3xl font-bold text-cyan-600 dark:text-white">
         {props.tagsCount}
       </h3>
     </div>
-    <div className="p-8 rounded bg-gray-200 w-full dark:bg-slate-700">
-      <div className="bg-pink-600 w-10 h-10 flex items-center justify-center rounded mx-auto">
+    <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
+      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded border border-cyan-400 bg-cyan-600">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-6 h-6 text-white"
+          className="h-6 w-6 text-white"
         >
           <path
             strokeLinecap="round"
@@ -78,10 +78,10 @@ const StatsList = (props: IStatsListProps) => (
           />
         </svg>
       </div>
-      <h2 className="font-bold text-black text-center my-4 dark:text-white">
+      <h2 className="my-4 text-center font-bold text-black dark:text-white">
         Proyectos
       </h2>
-      <h3 className="font-bold text-pink-600 text-center text-3xl dark:text-white">
+      <h3 className="text-center text-3xl font-bold text-cyan-600 dark:text-white">
         {props.projectsCount}
       </h3>
     </div>

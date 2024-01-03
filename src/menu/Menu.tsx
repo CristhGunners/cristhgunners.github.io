@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { Navbar } from '../navigation/Navbar';
-import { ToggleTheme } from '../toggle-theme/Toggle-theme';
 
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +25,7 @@ const Menu = () => {
         onClick={toggleMenu}
         className={`z-40 p-2 ${
           isMenuOpen ? 'fixed left-4' : 'absolute left-0'
-        } top-4 rounded text-black  hover:text-pink-600 dark:text-white dark:hover:text-pink-600 sm:hidden`}
+        } top-4 rounded text-black  hover:text-cyan-600 dark:text-white dark:hover:text-cyan-600 sm:hidden`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -60,16 +59,16 @@ const Menu = () => {
       <div
         className={`${
           isMenuOpen ? 'flex' : 'hidden'
-        } fixed z-30 w-full m-auto inset-0 h-screen bg-white flex flex-col items-center justify-center dark:bg-slate-900 sm:flex-row sm:h-auto sm:bg-transparent sm:dark:bg-transparent sm:static sm:inset-auto sm:m-0 sm:items-center sm:justify-between sm:pt-6 sm:flex`}
+        } fixed z-30 w-full m-auto inset-0 h-screen bg-white flex flex-col items-center justify-center dark:bg-neutral-950 sm:flex-row sm:h-auto sm:bg-transparent sm:dark:bg-transparent sm:static sm:inset-auto sm:m-0 sm:items-center sm:justify-between sm:pt-6 sm:flex`}
       >
         <Navbar>
           <li>
             <Link href="/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
                   router.pathname === '/'
-                    ? 'text-pink-600 dark:text-pink-600'
-                    : 'text-black dark:text-white'
+                    ? 'text-cyan-600 dark:text-cyan-600'
+                    : 'text-black dark:text-neutral-400'
                 }`}
               >
                 Inicio
@@ -79,10 +78,10 @@ const Menu = () => {
           <li>
             <Link href="/about/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
                   router.pathname === '/about'
-                    ? 'text-pink-600 dark:text-pink-600'
-                    : 'text-black dark:text-white'
+                    ? 'text-cyan-600 dark:text-cyan-600'
+                    : 'text-black dark:text-neutral-400'
                 }`}
               >
                 Acerca
@@ -92,10 +91,10 @@ const Menu = () => {
           <li>
             <Link href="/projects/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
                   router.pathname === '/projects'
-                    ? 'text-pink-600 dark:text-pink-600'
-                    : 'text-black dark:text-white'
+                    ? 'text-cyan-600 dark:text-cyan-600'
+                    : 'text-black dark:text-neutral-400'
                 }`}
               >
                 Proyectos
@@ -105,10 +104,10 @@ const Menu = () => {
           <li>
             <Link href="/tags/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
                   router.pathname === '/tags'
-                    ? 'text-pink-600 dark:text-pink-600'
-                    : 'text-black dark:text-white'
+                    ? 'text-cyan-600 dark:text-cyan-600'
+                    : 'text-black dark:text-neutral-400'
                 }`}
               >
                 Tags
@@ -118,10 +117,10 @@ const Menu = () => {
           <li>
             <Link href="/stats/">
               <a
-                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-pink-600 dark:hover:text-pink-600 ${
+                className={`font-semibold text-xl sm:text-sm py-2 block hover:text-cyan-600 dark:hover:text-cyan-600 ${
                   router.pathname === '/stats'
-                    ? 'text-pink-600 dark:text-pink-600'
-                    : 'text-black dark:text-white'
+                    ? 'text-cyan-600 dark:text-cyan-600 dark:border-neutral-600'
+                    : 'text-black dark:text-neutral-400'
                 }`}
               >
                 Estadísticas
@@ -129,7 +128,6 @@ const Menu = () => {
             </Link>
           </li>
         </Navbar>
-        <ToggleTheme />
       </div>
     </div>
   );

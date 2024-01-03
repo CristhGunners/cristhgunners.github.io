@@ -23,6 +23,7 @@ export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
     'date',
     'slug',
     'subtitle',
+    'tags',
     'is_project',
   ]);
   const pagination: IPaginationProps = {};
