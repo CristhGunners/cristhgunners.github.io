@@ -18,7 +18,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
       {props.posts.map((elt) => (
         <li key={elt.slug}>
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-            <a className="mb-12 flex flex-col items-start space-y-3 rounded border border-neutral-200 bg-white p-4 transition-colors hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-neutral-600">
+            <a className="mb-4 flex flex-col items-start space-y-3 rounded border border-neutral-200 bg-white p-4 transition-colors hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-neutral-600">
               {elt.is_project === 'true' ? (
                 <div className="flex items-center justify-center space-x-2">
                   <svg
