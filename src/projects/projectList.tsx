@@ -7,7 +7,7 @@ export type IProjectListProps = {
 };
 
 const ProjectList = (props: IProjectListProps) => (
-  <div className="space-y-8">
+  <div className="space-y-4">
     {props.projects.map((project) => (
       <div
         key={project.title}
