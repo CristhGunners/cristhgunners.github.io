@@ -9,7 +9,7 @@ export type IStatsListProps = {
 const StatsList = (props: IStatsListProps) => (
   <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0">
     <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
-      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded dark:border dark:border-neutral-800 dark:bg-neutral-800">
+      <div className="mx-auto flex h-10 w-10 items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -33,7 +33,7 @@ const StatsList = (props: IStatsListProps) => (
       </h3>
     </div>
     <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
-      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded dark:border dark:border-neutral-800 dark:bg-neutral-800">
+      <div className="mx-auto flex h-10 w-10 items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -62,7 +62,7 @@ const StatsList = (props: IStatsListProps) => (
       </h3>
     </div>
     <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
-      <div className="mx-auto flex h-10 w-10 items-center justify-center rounded dark:border dark:border-neutral-800 dark:bg-neutral-800">
+      <div className="mx-auto flex h-10 w-10 items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
