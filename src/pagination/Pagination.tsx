@@ -14,7 +14,7 @@ const Pagination = (props: IPaginationProps) => (
     {props.previous && (
       <div>
         <Link href={convertUrlToLinkHref(props.previous)} as={props.previous}>
-          <a className="rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
+          <a className="block rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
             ← Artículos Recientes
           </a>
         </Link>
@@ -24,7 +24,7 @@ const Pagination = (props: IPaginationProps) => (
     {props.next && (
       <div className="ml-auto text-right">
         <Link href={convertUrlToLinkHref(props.next)} as={props.next}>
-          <a className="rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
+          <a className="block rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
             Artículos Pasados →
           </a>
         </Link>

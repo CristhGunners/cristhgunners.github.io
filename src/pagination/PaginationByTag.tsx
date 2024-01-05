@@ -18,7 +18,7 @@ const PaginationByTag = (props: IPaginationByTagProps) => (
           href={convertUrlToLinkHrefByTag(props.previous, props.tag)}
           as={props.previous}
         >
-          <a className="rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
+          <a className="block rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
             ← Artículos Recientes
           </a>
         </Link>
@@ -31,7 +31,7 @@ const PaginationByTag = (props: IPaginationByTagProps) => (
           href={convertUrlToLinkHrefByTag(props.next, props.tag)}
           as={props.next}
         >
-          <a className="rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
+          <a className="block rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
             Artículos Pasados →
           </a>
         </Link>
