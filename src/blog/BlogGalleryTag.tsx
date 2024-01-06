@@ -22,7 +22,7 @@ const BlogGalleryTag = (props: IBlogGalleryTagProps) => (
       {props.posts.map((elt) => (
         <li key={elt.slug}>
           <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-            <a className="mb-4 flex flex-col items-start space-y-3 rounded border border-neutral-200 bg-white p-4 transition-colors hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-neutral-600">
+            <a className="relative mb-4 flex flex-col items-start space-y-3 rounded border border-neutral-200 bg-white p-4 transition-colors hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-neutral-600">
               {elt.is_project === 'true' ? (
                 <div className="flex items-center justify-center space-x-2">
                   <svg
@@ -41,6 +41,10 @@ const BlogGalleryTag = (props: IBlogGalleryTagProps) => (
                   </svg>
                   <span className="text-right text-xs font-black uppercase text-neutral-400">
                     Proyecto
+                  </span>
+                  <span className="absolute right-2 top-2 flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
                   </span>
                 </div>
               ) : (
