@@ -9,11 +9,14 @@ export type IProjectListProps = {
 const ProjectList = (props: IProjectListProps) => (
   <div className="space-y-4">
     {props.projects.map((project) => (
-      <div
+      <a
         key={project.title}
-        className={`w-full rounded border border-neutral-200 bg-white p-4 dark:border-neutral-700 dark:bg-neutral-800`}
+        href={project.url}
+        target="_blank"
+        rel="noreferrer"
+        className={`relative block w-full rounded border border-neutral-200 bg-white p-4 transition-colors dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-neutral-600`}
       >
-        <div className="">
+        <div>
           <div className="mb-4 flex items-center justify-start space-x-2">
             <img
               src={`/assets/images/projects/${project.logo}`}
@@ -27,41 +30,24 @@ const ProjectList = (props: IProjectListProps) => (
           <p className="text-base text-black dark:text-white">
             {project.description}
           </p>
-          <ul className="mt-8">
-            <li className="mb-2 flex items-center justify-start">
-              <span className="w-28 text-base font-normal text-black dark:text-white">
-                Website:{' '}
-              </span>{' '}
-              <span className="break-all text-base text-black dark:text-neutral-400">
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:underline dark:hover:text-white"
-                >
-                  {project.title}
-                </a>
-              </span>
-            </li>
-            <li className="mb-2 flex items-center justify-start">
-              <span className="w-28 text-base font-normal text-black dark:text-white">
-                Compañía:{' '}
-              </span>{' '}
+          <ul className="mt-4 flex flex-col items-start justify-start sm:flex-row sm:items-center sm:space-x-2">
+            <li className="flex items-center justify-start">
               <span className="text-base text-black dark:text-neutral-400">
                 {project.company}
               </span>
             </li>
             <li className="flex items-center justify-start">
-              <span className="w-28 text-base font-normal text-black dark:text-white">
-                Rol:{' '}
-              </span>{' '}
               <span className="text-base text-black dark:text-neutral-400">
                 {project.role}
               </span>
             </li>
           </ul>
         </div>
-      </div>
+        <span className="absolute right-2 top-2 flex h-2 w-2">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
+        </span>
+      </a>
     ))}
   </div>
 );
