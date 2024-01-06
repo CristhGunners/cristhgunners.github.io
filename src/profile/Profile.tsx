@@ -14,7 +14,7 @@ const Profile = () => {
           <img
             src={`/assets/images/profile.jpg`}
             alt={title}
-            className="w-24 grayscale transition-all duration-500 group-hover:scale-105"
+            className="w-24 grayscale transition-all duration-500 group-hover:grayscale-0"
           />
         </div>
       </Link>
