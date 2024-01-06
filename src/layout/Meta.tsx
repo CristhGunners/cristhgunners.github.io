@@ -62,7 +62,7 @@ const Meta = (props: IMetaProps) => {
         <link
           rel="mask-icon"
           href={`${router.basePath}/safari-pinned-tab.svg`}
-          color="#0891B2"
+          color="#0a0a0a"
         />
         <link
           rel="preload"
@@ -79,8 +79,8 @@ const Meta = (props: IMetaProps) => {
           as="image"
           href={`${router.basePath}/assets/images/projects/mhn-logo.png`}
         />
-        <meta name="msapplication-TileColor" content="#0891B2" />
-        <meta name="theme-color" content="#0891B2" />
+        <meta name="msapplication-TileColor" content="#0a0a0a" />
+        <meta name="theme-color" content="#0a0a0a" />
         <title>{`${props.title} - ${AppConfig.site_name}`}</title>
         <meta
           name="description"
