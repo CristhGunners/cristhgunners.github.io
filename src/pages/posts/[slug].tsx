@@ -61,6 +61,10 @@ const DisplayPost = (props: IPostProps) => (
           <span className="text-right text-xs font-black uppercase text-neutral-400">
             Proyecto
           </span>
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
+          </span>
         </div>
       ) : (
         ''
