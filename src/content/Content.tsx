@@ -11,15 +11,15 @@ const Content = (props: IContentProps) => (
     <style jsx>
       {`
         .content :global(*) {
-          @apply break-words text-neutral-400;
+          @apply break-words;
         }
 
         .content :global(p) {
-          @apply my-6;
+          @apply my-6 text-neutral-400;
         }
 
         .content :global(ul) {
-          @apply my-6;
+          @apply my-6 text-neutral-400;
         }
 
         .content :global(h2) {
@@ -31,7 +31,7 @@ const Content = (props: IContentProps) => (
         }
 
         .content :global(a) {
-          @apply text-green-600;
+          @apply text-teal-600;
         }
 
         .content :global(a):hover {
