@@ -2,6 +2,15 @@
 
 @tailwind base;
 
+/* Hide scrollbar */
+:root::-webkit-scrollbar{
+  display: none;
+}
+:root {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 html {
   font-family: 'Inter', sans-serif;
 }
