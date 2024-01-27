@@ -21,8 +21,6 @@ export type ProjectItem = {
   description: string;
   url: string;
   logo: string;
-  company: string;
-  role: string;
 };
 
 export function getPostSlugs() {

@@ -5,44 +5,61 @@ import { Main } from '../templates/Main';
 
 const About = () => (
   <Main meta={<Meta title="Acerca de Mi" description="Acerca de Mi" />}>
-    <ul className="mx-auto my-6 max-w-sm list-none space-y-2 text-left">
-      <li className="group flex cursor-pointer items-center justify-start space-x-2 rounded border border-neutral-200 bg-white p-2 dark:border-neutral-700 dark:bg-neutral-800">
+    <ul className="list-none space-y-4">
+      <li className="group relative flex cursor-pointer items-center justify-start space-x-2 rounded p-4 transition-colors hover:bg-neutral-900">
         <img
           src={`/assets/images/about/chile.svg`}
           alt="Chile"
-          className="h-6 w-6"
+          className="w-10"
         />{' '}
-        <span className="text-neutral-400 dark:text-white">Chile</span>
+        <div>
+          <h2 className="text-left text-base font-bold text-white">Chile</h2>
+          <p className="text-balance text-sm text-neutral-400">
+            América del Sur.
+          </p>
+        </div>
         <img
           src={`/assets/images/about/chile.webp`}
           alt="Chile"
-          className="fixed m-auto w-4/5 max-w-64 scale-0 rounded transition-all duration-500 group-hover:scale-100"
+          className="absolute left-1/2 top-1/2 z-10 w-4/5 max-w-64 -translate-x-1/2 -translate-y-1/2 scale-0 transform rounded transition-all duration-500 group-hover:scale-100"
         />
       </li>
-      <li className="group flex cursor-pointer items-center justify-start space-x-2 rounded border border-neutral-200 bg-white p-2 dark:border-neutral-700 dark:bg-neutral-800">
+      <li className="group relative flex cursor-pointer items-center justify-start space-x-2 rounded p-4 transition-colors hover:bg-neutral-900">
         <img
           src={`/assets/images/about/basketball.svg`}
           alt="76ers"
-          className="h-6 w-6"
+          className="w-10"
         />{' '}
-        <span className="text-neutral-400 dark:text-white">76ers</span>
+        <div>
+          <h2 className="text-left text-base font-bold text-white">76ers</h2>
+          <p className="text-balance text-sm text-neutral-400">
+            Fan de Iverson, Simmons y Embiid.
+          </p>
+        </div>
         <img
           src={`/assets/images/about/iverson.webp`}
           alt="Iverson"
-          className="fixed m-auto w-4/5 max-w-96 scale-0 rounded transition-all duration-500 group-hover:scale-100"
+          className="absolute left-1/2 top-1/2 z-10 w-4/5 max-w-96 -translate-x-1/2 -translate-y-1/2 scale-0 transform rounded transition-all duration-500 group-hover:scale-100"
         />
       </li>
-      <li className="group flex cursor-pointer items-center justify-start space-x-2 rounded border border-neutral-200 bg-white p-2 dark:border-neutral-700 dark:bg-neutral-800">
+      <li className="group relative flex cursor-pointer items-center justify-start space-x-2 rounded p-4 transition-colors hover:bg-neutral-900">
         <img
           src={`/assets/images/about/soccer.svg`}
           alt="Arsenal F.C."
-          className="h-6 w-6"
+          className="w-10"
         />{' '}
-        <span className="text-neutral-400 dark:text-white">Arsenal F.C.</span>
+        <div>
+          <h2 className="text-left text-base font-bold text-white">
+            Arsenal F.C.
+          </h2>
+          <p className="text-balance text-sm text-neutral-400">
+            Fan de Henry, Özil y Alexis.
+          </p>
+        </div>
         <img
           src={`/assets/images/about/henry.webp`}
           alt="Henry"
-          className="fixed m-auto w-4/5 max-w-64 scale-0 rounded transition-all duration-500 group-hover:scale-100"
+          className="absolute left-1/2 top-1/2 z-10 w-4/5 max-w-64 -translate-x-1/2 -translate-y-1/2 scale-0 transform rounded transition-all duration-500 group-hover:scale-100"
         />
       </li>
     </ul>

@@ -33,10 +33,10 @@ const PaginatePosts = (props: ITagProps) => {
   return (
     <Main meta={<Meta title={tagTitle} description={tagTitle} />}>
       <div className="mb-16 flex flex-col items-center justify-center space-y-2">
-        <h1 className="text-center text-2xl font-black uppercase text-black dark:text-white">
+        <h1 className="text-center text-2xl font-black uppercase text-white">
           {props.tag}
         </h1>
-        <h2 className="mx-auto p-2 text-center text-sm font-black uppercase text-neutral-400 dark:text-white">
+        <h2 className="mx-auto p-2 text-center text-sm font-black uppercase text-neutral-400">
           {props.count}
         </h2>
       </div>

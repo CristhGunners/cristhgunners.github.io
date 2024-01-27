@@ -25,7 +25,7 @@ const Menu = () => {
         onClick={toggleMenu}
         className={`z-40 p-2 ${
           isMenuOpen ? 'fixed left-4' : 'absolute left-0'
-        } top-4 rounded text-neutral-400  hover:text-black dark:text-neutral-400 dark:hover:text-white sm:hidden`}
+        } top-4 rounded text-neutral-400  hover:text-white sm:hidden`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,16 +59,14 @@ const Menu = () => {
       <div
         className={`${
           isMenuOpen ? 'flex' : 'hidden'
-        } fixed z-30 w-full m-auto inset-0 h-screen bg-white flex flex-col items-center justify-center dark:bg-neutral-950 sm:flex-row sm:h-auto sm:bg-transparent sm:dark:bg-transparent sm:static sm:inset-auto sm:m-0 sm:items-center sm:justify-between sm:pt-6 sm:flex`}
+        } fixed z-30 w-full m-auto inset-0 h-screen flex flex-col items-center justify-center bg-neutral-950 sm:flex-row sm:h-auto sm:bg-transparent sm:static sm:inset-auto sm:m-0 sm:items-center sm:justify-between sm:pt-6 sm:flex`}
       >
         <Navbar>
           <li>
             <Link href="/">
               <a
-                className={`font-normal text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
-                  router.pathname === '/'
-                    ? 'text-black bg-white border-neutral-200 border hover:border-neutral-300 dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
-                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
+                className={`font-normal text-xl sm:text-sm p-2 rounded block transition-colors hover:text-white ${
+                  router.pathname === '/' ? 'text-white ' : 'text-neutral-400 '
                 }`}
               >
                 Inicio
@@ -78,10 +76,10 @@ const Menu = () => {
           <li>
             <Link href="/about/">
               <a
-                className={`font-normal text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
+                className={`font-normal text-xl sm:text-sm p-2 rounded block transition-colors hover:text-white ${
                   router.pathname === '/about'
-                    ? 'text-black bg-white border-neutral-200 border hover:border-neutral-300 dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
-                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
+                    ? 'text-white'
+                    : 'text-neutral-400'
                 }`}
               >
                 Acerca
@@ -91,10 +89,10 @@ const Menu = () => {
           <li>
             <Link href="/projects/">
               <a
-                className={`font-normal text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
+                className={`font-normal text-xl sm:text-sm p-2 rounded block transition-colors hover:text-white ${
                   router.pathname === '/projects'
-                    ? 'text-black bg-white border-neutral-200 hover:border-neutral-300 border dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
-                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
+                    ? 'text-white'
+                    : 'text-neutral-400'
                 }`}
               >
                 Proyectos
@@ -104,10 +102,10 @@ const Menu = () => {
           <li>
             <Link href="/tags/">
               <a
-                className={`font-normal text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
+                className={`font-normal text-xl sm:text-sm p-2 rounded block transition-colors hover:text-white ${
                   router.pathname === '/tags'
-                    ? 'text-black bg-white border-neutral-200 border hover:border-neutral-300 dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
-                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
+                    ? 'text-white'
+                    : 'text-neutral-400'
                 }`}
               >
                 Tags
@@ -117,10 +115,10 @@ const Menu = () => {
           <li>
             <Link href="/stats/">
               <a
-                className={`font-regular text-xl sm:text-sm p-2 rounded block dark:hover:text-white ${
+                className={`font-normal text-xl sm:text-sm p-2 rounded block transition-colors hover:text-white ${
                   router.pathname === '/stats'
-                    ? 'text-black bg-white border-neutral-200 border hover:border-neutral-300 dark:text-white dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 transition-colors'
-                    : 'text-neutral-400 hover:text-black dark:text-neutral-400'
+                    ? 'text-white'
+                    : 'text-neutral-400'
                 }`}
               >
                 Estadísticas

@@ -10,12 +10,12 @@ export type IPaginationProps = {
 };
 
 const Pagination = (props: IPaginationProps) => (
-  <div className="flex justify-between text-sm">
+  <div className="flex justify-between">
     {props.previous && (
       <div>
         <Link href={convertUrlToLinkHref(props.previous)} as={props.previous}>
-          <a className="block rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
-            ← Artículos Recientes
+          <a className="block rounded p-2 text-sm text-neutral-400 transition-colors hover:text-white">
+            Artículos Recientes
           </a>
         </Link>
       </div>
@@ -24,8 +24,8 @@ const Pagination = (props: IPaginationProps) => (
     {props.next && (
       <div className="ml-auto text-right">
         <Link href={convertUrlToLinkHref(props.next)} as={props.next}>
-          <a className="block rounded border border-neutral-200 bg-white p-2 text-black transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:border-neutral-600">
-            Artículos Pasados →
+          <a className="block rounded p-2 text-sm text-neutral-400 transition-colors hover:text-white">
+            Artículos Pasados
           </a>
         </Link>
       </div>
