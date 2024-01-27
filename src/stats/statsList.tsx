@@ -7,8 +7,8 @@ export type IStatsListProps = {
 };
 
 const StatsList = (props: IStatsListProps) => (
-  <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0">
-    <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
+  <div className="flex flex-col items-center justify-center space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0">
+    <div className="w-full rounded p-8">
       <div className="mx-auto flex h-10 w-10 items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,14 +25,14 @@ const StatsList = (props: IStatsListProps) => (
           />
         </svg>
       </div>
-      <h2 className="my-4 text-center font-bold text-black dark:text-white">
-        Artículos
-      </h2>
-      <h3 className="text-center text-3xl font-bold text-neutral-400 dark:text-white">
+      <h3 className="text-center text-3xl font-bold text-white">
         {props.postsCount}
       </h3>
+      <h2 className="text-center text-xs font-bold uppercase text-neutral-400">
+        Artículos
+      </h2>
     </div>
-    <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
+    <div className="w-full rounded p-8">
       <div className="mx-auto flex h-10 w-10 items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,14 +54,14 @@ const StatsList = (props: IStatsListProps) => (
           />
         </svg>
       </div>
-      <h2 className="my-4 text-center font-bold text-black dark:text-white">
-        Tags
-      </h2>
-      <h3 className="text-center text-3xl font-bold text-neutral-400 dark:text-white">
+      <h3 className="text-center text-3xl font-bold text-white">
         {props.tagsCount}
       </h3>
+      <h2 className="text-center text-xs font-bold uppercase text-neutral-400">
+        Tags
+      </h2>
     </div>
-    <div className="w-full rounded border border-neutral-200 bg-neutral-50 p-8 dark:border-neutral-700 dark:bg-neutral-800">
+    <div className="w-full rounded p-8">
       <div className="mx-auto flex h-10 w-10 items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -78,12 +78,12 @@ const StatsList = (props: IStatsListProps) => (
           />
         </svg>
       </div>
-      <h2 className="my-4 text-center font-bold text-black dark:text-white">
-        Proyectos
-      </h2>
-      <h3 className="text-center text-3xl font-bold text-neutral-400 dark:text-white">
+      <h3 className="text-center text-3xl font-bold text-white">
         {props.projectsCount}
       </h3>
+      <h2 className="text-center text-xs font-bold uppercase text-neutral-400">
+        Proyectos
+      </h2>
     </div>
   </div>
 );

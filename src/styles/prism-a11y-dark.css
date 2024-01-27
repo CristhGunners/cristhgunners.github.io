@@ -24,6 +24,8 @@ pre[class*='language-'] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+
+  font-size: 0.95em;
 }
 
 /* Code blocks */
@@ -36,8 +38,14 @@ pre[class*='language-'] {
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background: #262626;
-  border: 1px solid #404040;
+  background: #171717;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+:not(pre) > code[class*='language-']::-webkit-scrollbar,
+pre[class*='language-']::-webkit-scrollbar{
+  display: none;
 }
 
 /* Inline code */

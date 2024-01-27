@@ -4,25 +4,19 @@
       "title": "EmFaces",
       "description": "Colección gratuita de emoticons.",
       "url": "https://emoticonfaces.com/",
-      "logo": "emfaces.svg",
-      "company": "Proyecto Personal",
-      "role": "Frontend Developer"
+      "logo": "emfaces.svg"
     },
     {
       "title": "Minimal Hacker News",
-      "description": "Version minimal del popular sitio Hacker News, los mejores artículos de tecnología, programación y mas. Enfocado en la simpleza y con un renovado diseño del feed.",
+      "description": "Version minimal de Hacker News.",
       "url": "https://cristhgunners.github.io/MinimalHackerNews/",
-      "logo": "mhn-logo.png",
-      "company": "Proyecto Personal",
-      "role": "Frontend Developer"
+      "logo": "mhn-logo.png"
     },
     {
       "title": "Coolors",
-      "description": "Paletas de colores creadas por mi, 60 paletas de hermosas combinaciones de colores.",
+      "description": "Paletas de colores creadas por mi.",
       "url": "https://cristhgunners.github.io/Coolors/",
-      "logo": "coolors-logo.png",
-      "company": "Proyecto Personal",
-      "role": "Frontend Developer"
+      "logo": "coolors-logo.png"
     }
   ]
 }

@@ -5,7 +5,7 @@ type IContentProps = {
 };
 
 const Content = (props: IContentProps) => (
-  <div className="content text-neutral-400 dark:text-white">
+  <div className="content text-neutral-400">
     {props.children}
 
     <style jsx>
@@ -31,7 +31,7 @@ const Content = (props: IContentProps) => (
         }
 
         .content :global(a) {
-          @apply text-teal-600;
+          @apply text-green-600;
         }
 
         .content :global(a):hover {

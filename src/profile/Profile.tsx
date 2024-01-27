@@ -19,11 +19,9 @@ const Profile = () => {
         </div>
       </Link>
       <Link href={'/'} passHref>
-        <h2 className="cursor-pointer text-black dark:text-white">
-          {AppConfig.site_name}
-        </h2>
+        <h2 className="cursor-pointer text-white">{AppConfig.site_name}</h2>
       </Link>
-      <p className="dark:text-neutral-400">{AppConfig.description}</p>
+      <p className="text-neutral-400">{AppConfig.description}</p>
     </div>
   );
 };
