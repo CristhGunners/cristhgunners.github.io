@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "title": "DarkFolios",
+      "description": "Portafolios con diseño oscuro.",
+      "url": "https://www.darkfolios.com/",
+      "logo": "darkfolios.png"
+    },
+    {
       "title": "EmFaces",
       "description": "Colección gratuita de emoticons.",
       "url": "https://emoticonfaces.com/",
