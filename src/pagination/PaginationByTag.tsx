@@ -18,7 +18,7 @@ const PaginationByTag = (props: IPaginationByTagProps) => (
           href={convertUrlToLinkHrefByTag(props.previous, props.tag)}
           as={props.previous}
         >
-          <a className="block rounded p-2 text-sm text-neutral-400 transition-colors hover:text-white">
+          <a className="block rounded px-4 py-2 text-sm text-neutral-400 transition-colors hover:text-white">
             Artículos Recientes
           </a>
         </Link>
@@ -31,7 +31,7 @@ const PaginationByTag = (props: IPaginationByTagProps) => (
           href={convertUrlToLinkHrefByTag(props.next, props.tag)}
           as={props.next}
         >
-          <a className="block rounded p-2 text-sm text-neutral-400 transition-colors hover:text-white">
+          <a className="block rounded px-4 py-2 text-sm text-neutral-400 transition-colors hover:text-white">
             Artículos Pasados
           </a>
         </Link>
