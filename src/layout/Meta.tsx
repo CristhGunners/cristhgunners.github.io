@@ -89,6 +89,21 @@ const Meta = (props: IMetaProps) => {
           as="image"
           href={`${router.basePath}/assets/images/projects/darkfolios.png`}
         />
+        <link
+          rel="preload"
+          as="image"
+          href={`${router.basePath}/assets/images/projects/chile.png`}
+        />
+        <link
+          rel="preload"
+          as="image"
+          href={`${router.basePath}/assets/images/projects/basketball.png`}
+        />
+        <link
+          rel="preload"
+          as="image"
+          href={`${router.basePath}/assets/images/projects/soccer.png`}
+        />
         <meta name="msapplication-TileColor" content="#0a0a0a" />
         <meta name="theme-color" content="#0a0a0a" />
         <title>{`${props.title} - ${AppConfig.site_name}`}</title>
