@@ -92,17 +92,17 @@ const Meta = (props: IMetaProps) => {
         <link
           rel="preload"
           as="image"
-          href={`${router.basePath}/assets/images/about/chile.png`}
+          href={`${router.basePath}/assets/images/about/chile.svg`}
         />
         <link
           rel="preload"
           as="image"
-          href={`${router.basePath}/assets/images/about/basketball.png`}
+          href={`${router.basePath}/assets/images/about/basketball.svg`}
         />
         <link
           rel="preload"
           as="image"
-          href={`${router.basePath}/assets/images/about/soccer.png`}
+          href={`${router.basePath}/assets/images/about/soccer.svg`}
         />
         <meta name="msapplication-TileColor" content="#0a0a0a" />
         <meta name="theme-color" content="#0a0a0a" />
