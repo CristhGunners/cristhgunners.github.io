@@ -11,5 +11,5 @@ tags: 'tailwind'
 Background image con linear gradient en Tailwind CSS:
 
 ```html
-<div class="bg-[linear-gradient(to_right_bottom,rgba(49,84,44,0.8),rgba(16,71,52,0.8)),url('../src/images/bg.jpg')]"></div>
+<div class="bg-[linear-gradient(to_right_bottom,rgba(49,84,44,0.8),rgba(16,71,52,0.8)),url(../src/images/bg.jpg)]"></div>
 ```
