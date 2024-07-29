@@ -1,21 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Meta } from '../layout/Meta';
-import { Main } from '../templates/Main';
+import { AppConfig } from '../utils/AppConfig';
 
-const NotFound = () => (
-  <Main
-    meta={
-      <Meta title="Pagina no encontrada" description="Pagina no encontrada" />
-    }
-  >
-    <span className="mx-auto my-0 block text-center text-6xl font-bold text-white">
-      404
-    </span>
-    <p className="mx-auto my-6 max-w-sm text-center text-neutral-400">
-      Pagina no encontrada
-    </p>
-  </Main>
-);
+export default function NotFound() {
+  useEffect(() => {
+    const { pathname } = window.location;
+    const newUrl = `${AppConfig.url}${pathname}`;
+    window.location.replace(newUrl);
+  }, []);
 
-export default NotFound;
+  return (
+    <div className="flex h-screen items-center justify-center bg-transparent">
+      <Meta
+        title={AppConfig.title}
+        description={AppConfig.description}
+        refresh={false}
+      />
+      <span className="mr-2 text-white">Website migrado a</span>
+      <a href={AppConfig.url} className="text-white">
+        {AppConfig.url}
+      </a>
+    </div>
+  );
+}

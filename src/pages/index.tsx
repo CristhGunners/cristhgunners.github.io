@@ -1,43 +1,20 @@
 import React from 'react';
 
-import { GetStaticProps } from 'next';
-
-import { BlogGallery, IBlogGalleryProps } from '../blog/BlogGallery';
 import { Meta } from '../layout/Meta';
-import { IPaginationProps } from '../pagination/Pagination';
-import { Main } from '../templates/Main';
 import { AppConfig } from '../utils/AppConfig';
-import { getAllPosts } from '../utils/Content';
 
-const Index = (props: IBlogGalleryProps) => (
-  <Main
-    meta={<Meta title={AppConfig.title} description={AppConfig.description} />}
-  >
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
-  </Main>
+const Index = () => (
+  <div className="flex h-screen items-center justify-center bg-transparent">
+    <Meta
+      title={AppConfig.title}
+      description={AppConfig.description}
+      refresh={true}
+    />
+    <span className="mr-2 text-white">Website migrado a</span>
+    <a href={AppConfig.url} className="text-white">
+      {AppConfig.url}
+    </a>
+  </div>
 );
-
-export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
-  const posts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'subtitle',
-    'tags',
-    'is_project',
-  ]);
-  const pagination: IPaginationProps = {};
-
-  if (posts.length > AppConfig.pagination_size) {
-    pagination.next = '/page2';
-  }
-
-  return {
-    props: {
-      posts: posts.slice(0, AppConfig.pagination_size),
-      pagination,
-    },
-  };
-};
 
 export default Index;
